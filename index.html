@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
+    <title>Elfen Lied</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="logo">Elfen lied</div>
+
+        <div class="header-actions">
+            <div class="header-action-group">
+                    <span class="header-catalog-icon">
+                        <svg viewBox="0 0 15 15" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <circle id="Ellipse 25" cx="3.000000" cy="3.000000" r="3.000000" fill="#FFFFFF"
+                                    fill-opacity="1.000000"/>
+                            <circle id="Ellipse 26" cx="12.000000" cy="3.000000" r="3.000000" fill="#FFFFFF"
+                                    fill-opacity="1.000000"/>
+                            <circle id="Ellipse 27" cx="12.000000" cy="12.000000" r="3.000000" fill="#FFFFFF"
+                                    fill-opacity="1.000000"/>
+                            <circle id="Ellipse 28" cx="3.000000" cy="12.000000" r="3.000000" fill="#FFFFFF"
+                                    fill-opacity="1.000000"/>
+                        </svg>
+                    </span>
+
+                <span class="header-action-text header-catalog">Каталог</span>
+            </div>
+
+            <div class="header-action-group">
+                <span class="header-action-text header-blog">Блог</span>
+                <span class="header-action-text header-contact">Контакты</span>
+            </div>
+
+            <div class="header-action-group">
+                    <span class="header-search-icon">
+                        <svg viewBox="0 0 26 26" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath id="clip2518_1376">
+                                    <rect id="search" rx="0.000000" width="25.000000" height="25.000000"
+                                          transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+                                </clipPath>
+                            </defs>
+                            <rect id="search" rx="0.000000" width="25.000000" height="25.000000"
+                                  transform="translate(0.500000 0.500000)"
+                                  fill="#FFFFFF" fill-opacity="0"/>
+                            <g clip-path="url(#clip2518_1376)">
+                                <path id="Vector"
+                                      d="M11.5 20C6.8 20 3 16.19 3 11.5C3 6.8 6.8 3 11.5 3C16.19 3 20 6.8 20 11.5C20 16.19 16.19 20 11.5 20Z"
+                                      stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000"
+                                      stroke-linejoin="round"/>
+                                <path id="Vector" d="M23 23L18 18" stroke="#FFFFFF" stroke-opacity="1.000000"
+                                      stroke-width="2.000000"
+                                      stroke-linejoin="round" stroke-linecap="round"/>
+                            </g>
+                        </svg>
+                    </span>
+
+                <span class="header-action-text">Поиск</span>
+            </div>
+
+            <div class="header-action-group">
+                <span class="header-action-favorites-icon" id="favorite">
+                    <svg viewBox="0 0 22 20" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                            <defs/>
+                            <path id="Vector"
+                                  d="M15.88 0C13.89 0 12.11 0.98 11 2.5C9.88 0.98 8.1 0 6.11 0C2.73 0 0 2.8 0 6.28C0 7.61 0.2 8.85 0.57 10C2.3 15.61 7.66 18.97 10.31 19.89C10.69 20.03 11.3 20.03 11.68 19.89C14.33 18.97 19.69 15.61 21.42 10C21.79 8.85 22 7.61 22 6.28C22 2.8 19.26 0 15.88 0Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                        </svg>
+                </span>
+
+                <span class="header-action-favorites-profile-icon" id="auth">
+                    <svg viewBox="0 0 18 21" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path id="Union"
+                              d="M9 10C11.7617 10 14 7.76123 14 5C14 2.23877 11.7617 0 9 0C6.23828 0 4 2.23877 4 5C4 7.76123 6.23828 10 9 10ZM0 19.5C0 15.3599 4.04004 13 9 13C13.96 13 18 15.3599 18 19.5C18 20.585 17.416 21 16.5146 21L1.48535 21C1.0791 21 0 21 0 19.5Z"
+                              clip-rule="evenodd" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    </svg>
+                </span>
+
+                <span class="header-action-basket-icon" id="basket">
+                    <svg viewBox="0 0 20 22" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path id="Union"
+                              d="M3.53516 2.68994L3.33887 5.14014C3.29883 5.60986 3.66309 6 4.12598 6L19.2041 6C19.6172 6 19.9619 5.68018 19.9912 5.25977C20.1191 3.49023 18.79 2.0498 17.0469 2.0498L4.94336 2.0498C4.8457 1.60986 4.64844 1.18994 4.34277 0.839844C3.85059 0.310059 3.16113 0 2.45215 0L0.738281 0C0.334961 0 0 0.339844 0 0.75C0 1.16016 0.334961 1.5 0.738281 1.5L2.45215 1.5C2.75781 1.5 3.04297 1.62988 3.25 1.8501C3.45703 2.08008 3.55469 2.37988 3.53516 2.68994ZM4.14941 8L19.2207 8C19.6826 8 20.0361 8.37842 19.9971 8.82422L19.6729 13.3525C19.5645 14.8071 18.2676 16 16.7939 16L5.86914 16C4.18848 16 2.87207 14.5845 3.00977 12.9263L3.36328 8.70801C3.40332 8.31055 3.7373 8 4.14941 8ZM7 22C8.10449 22 9 21.1045 9 20C9 18.8955 8.10449 18 7 18C5.89551 18 5 18.8955 5 20C5 21.1045 5.89551 22 7 22ZM15 22C16.1045 22 17 21.1045 17 20C17 18.8955 16.1045 18 15 18C13.8955 18 13 18.8955 13 20C13 21.1045 13.8955 22 15 22Z"
+                              clip-rule="evenodd" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="goods-day">
+        <div class="container">
+            <div class="goods-day-items">
+                <div class="goods-day-item active" data-item-id="1">
+                    <div class="goods-day-item-image">
+                        <img src="static/images/good-day-1.png" alt="">
+                    </div>
+
+                    <div class="goods-day-item-text">
+                        товар дня
+                    </div>
+
+                    <div class="goods-day-item-bg-text">
+                        Benjamin Moore
+                    </div>
+
+                    <div class="goods-day-item-footer">
+                        <div class="goods-day-item-footer-left">
+                            <div class="goods-day-item-title">
+                                Santa Trinita
+                            </div>
+
+                            <div class="goods-day-item-description">
+                                Функциональная дизайнерская лампа для создания максимально
+                                комфортного освещения
+                            </div>
+
+                            <div class="goods-day-item-price">
+                                150000 <span class="price-span">₽</span>
+                            </div>
+                        </div>
+
+                        <div class="goods-day-item-footer-right">
+                            <div class="goods-day-item-buy button-buy">
+                                <span class="goods-day-item-buy-icon">
+                                    <svg viewBox="0 0 20.3086 21.25" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path id="Union"
+                                              d="M3.58984 2.68994L3.38965 5.14014C3.34961 5.60986 3.71973 6 4.19043 6L19.5 6C19.9199 6 20.2695 5.68018 20.2998 5.25977C20.4297 3.49023 19.0801 2.0498 17.3096 2.0498L5.01953 2.0498C4.91992 1.60986 4.71973 1.18994 4.41016 0.839844C3.91016 0.310059 3.20996 0 2.49023 0L0.75 0C0.339844 0 0 0.339844 0 0.75C0 1.16016 0.339844 1.5 0.75 1.5L2.49023 1.5C2.7998 1.5 3.08984 1.62988 3.2998 1.8501C3.50977 2.08008 3.61035 2.37988 3.58984 2.68994ZM3.91992 7.5L19.2598 7.5C19.7305 7.5 20.0898 7.89014 20.0498 8.3501L19.7197 13.02C19.6104 14.52 18.29 15.75 16.79 15.75L5.66992 15.75C3.95996 15.75 2.62012 14.29 2.75977 12.5801L3.12012 8.22998C3.16016 7.81982 3.5 7.5 3.91992 7.5ZM7 21.25C7.9668 21.25 8.75 20.4663 8.75 19.5C8.75 18.5337 7.9668 17.75 7 17.75C6.0332 17.75 5.25 18.5337 5.25 19.5C5.25 20.4663 6.0332 21.25 7 21.25ZM15 21.25C15.9668 21.25 16.75 20.4663 16.75 19.5C16.75 18.5337 15.9668 17.75 15 17.75C14.0332 17.75 13.25 18.5337 13.25 19.5C13.25 20.4663 14.0332 21.25 15 21.25Z"
+                                              clip-rule="evenodd" fill="#D9FF5A" fill-opacity="1.000000"
+                                              fill-rule="evenodd"/>
+                                    </svg>
+                                </span>
+
+                                <span class="goods-day-item-buy-text">Купить</span>
+                            </div>
+                        </div>
+
+                        <div class="goods-day-item-footer-slide">
+                            <div class="goods-day-item-footer-slide-text">слайд</div>
+                            <div class="goods-day-item-footer-slide-count">01</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goods-day-item" data-item-id="2">
+                    <div class="goods-day-item-image">
+                        <img src="static/images/good-day-2.png" alt="">
+                    </div>
+
+                    <div class="goods-day-item-text">
+                        товар дня
+                    </div>
+
+                    <div class="goods-day-item-bg-text">
+                        Paint Here Glory
+                    </div>
+
+                    <div class="goods-day-item-footer">
+                        <div class="goods-day-item-footer-left">
+                            <div class="goods-day-item-title">
+                                кресло
+                            </div>
+
+                            <div class="goods-day-item-description">
+                                Функциональная дизайнерское кресло для создания максимально
+                                уюта в помещении
+                            </div>
+
+                            <div class="goods-day-item-price">
+                                120 000 <span class="price-span">₽</span>
+                            </div>
+                        </div>
+
+                        <div class="goods-day-item-footer-right">
+                            <button class="goods-day-item-buy button-buy">
+                                <span>
+                                    <svg width="20.308594" height="21.250000" viewBox="0 0 20.3086 21.25" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path id="Union"
+                                              d="M3.58984 2.68994L3.38965 5.14014C3.34961 5.60986 3.71973 6 4.19043 6L19.5 6C19.9199 6 20.2695 5.68018 20.2998 5.25977C20.4297 3.49023 19.0801 2.0498 17.3096 2.0498L5.01953 2.0498C4.91992 1.60986 4.71973 1.18994 4.41016 0.839844C3.91016 0.310059 3.20996 0 2.49023 0L0.75 0C0.339844 0 0 0.339844 0 0.75C0 1.16016 0.339844 1.5 0.75 1.5L2.49023 1.5C2.7998 1.5 3.08984 1.62988 3.2998 1.8501C3.50977 2.08008 3.61035 2.37988 3.58984 2.68994ZM3.91992 7.5L19.2598 7.5C19.7305 7.5 20.0898 7.89014 20.0498 8.3501L19.7197 13.02C19.6104 14.52 18.29 15.75 16.79 15.75L5.66992 15.75C3.95996 15.75 2.62012 14.29 2.75977 12.5801L3.12012 8.22998C3.16016 7.81982 3.5 7.5 3.91992 7.5ZM7 21.25C7.9668 21.25 8.75 20.4663 8.75 19.5C8.75 18.5337 7.9668 17.75 7 17.75C6.0332 17.75 5.25 18.5337 5.25 19.5C5.25 20.4663 6.0332 21.25 7 21.25ZM15 21.25C15.9668 21.25 16.75 20.4663 16.75 19.5C16.75 18.5337 15.9668 17.75 15 17.75C14.0332 17.75 13.25 18.5337 13.25 19.5C13.25 20.4663 14.0332 21.25 15 21.25Z"
+                                              clip-rule="evenodd" fill="#D9FF5A" fill-opacity="1.000000"
+                                              fill-rule="evenodd"/>
+                                    </svg>
+                                </span>
+
+                                Купить
+                            </button>
+                        </div>
+
+                        <div class="goods-day-item-footer-slide">
+                            <div class="goods-day-item-footer-slide-text">слайд</div>
+                            <div class="goods-day-item-footer-slide-count">02</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goods-day-item" data-item-id="3">
+                    <div class="goods-day-item-image">
+                        <img src="static/images/good-day-3.png" alt="">
+                    </div>
+
+                    <div class="goods-day-item-text">
+                        товар дня
+                    </div>
+
+                    <div class="goods-day-item-bg-text">
+                        Benjamin Moore
+                    </div>
+
+                    <div class="goods-day-item-footer">
+                        <div class="goods-day-item-footer-left">
+                            <div class="goods-day-item-title">
+                                высокий стол
+                            </div>
+
+                            <div class="goods-day-item-description">
+                                Функциональная дизайнерская лампа для создания максимально
+                                комфортного освещения
+                            </div>
+
+                            <div class="goods-day-item-price">
+                                235 000 <span class="price-span">₽</span>
+                            </div>
+                        </div>
+
+                        <div class="goods-day-item-footer-right">
+                            <button class="goods-day-item-buy button-buy">
+                                <span>
+                                    <svg viewBox="0 0 20.3086 21.25" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path id="Union"
+                                              d="M3.58984 2.68994L3.38965 5.14014C3.34961 5.60986 3.71973 6 4.19043 6L19.5 6C19.9199 6 20.2695 5.68018 20.2998 5.25977C20.4297 3.49023 19.0801 2.0498 17.3096 2.0498L5.01953 2.0498C4.91992 1.60986 4.71973 1.18994 4.41016 0.839844C3.91016 0.310059 3.20996 0 2.49023 0L0.75 0C0.339844 0 0 0.339844 0 0.75C0 1.16016 0.339844 1.5 0.75 1.5L2.49023 1.5C2.7998 1.5 3.08984 1.62988 3.2998 1.8501C3.50977 2.08008 3.61035 2.37988 3.58984 2.68994ZM3.91992 7.5L19.2598 7.5C19.7305 7.5 20.0898 7.89014 20.0498 8.3501L19.7197 13.02C19.6104 14.52 18.29 15.75 16.79 15.75L5.66992 15.75C3.95996 15.75 2.62012 14.29 2.75977 12.5801L3.12012 8.22998C3.16016 7.81982 3.5 7.5 3.91992 7.5ZM7 21.25C7.9668 21.25 8.75 20.4663 8.75 19.5C8.75 18.5337 7.9668 17.75 7 17.75C6.0332 17.75 5.25 18.5337 5.25 19.5C5.25 20.4663 6.0332 21.25 7 21.25ZM15 21.25C15.9668 21.25 16.75 20.4663 16.75 19.5C16.75 18.5337 15.9668 17.75 15 17.75C14.0332 17.75 13.25 18.5337 13.25 19.5C13.25 20.4663 14.0332 21.25 15 21.25Z"
+                                              clip-rule="evenodd" fill="#D9FF5A" fill-opacity="1.000000"
+                                              fill-rule="evenodd"/>
+                                    </svg>
+                                </span>
+
+                                Купить
+                            </button>
+                        </div>
+
+                        <div class="goods-day-item-footer-slide">
+                            <div class="goods-day-item-footer-slide-text">слайд</div>
+                            <div class="goods-day-item-footer-slide-count">03</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="basket-favorite-modal basket-modal modal" id="basket-modal">
+                <div class="modal-close" id="basket-modal-close">
+                    <svg viewBox="0 0 36 36" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector" d="M27 9L9 27" stroke="#FFFFFF" stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round" stroke-linecap="round"/>
+                        <path id="Vector" d="M9 9L27 27" stroke="#FFFFFF" stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <div class="basket-favorite-modal-title">
+                    Ваша корзина
+                </div>
+
+                <div class="basket-favorite-modal-items">
+                    <div class="basket-favorite-modal-item">
+                        <div class="basket-favorite-modal-item-image">
+                            <img src="static/images/basket-1.png" alt="">
+                        </div>
+
+                        <div class="basket-favorite-modal-item-info">
+                            <div class="basket-favorite-modal-item-info-header">
+                                <div class="basket-favorite-modal-item-info-header-text">
+                                    <div class="basket-favorite-modal-item-info-header-title">
+                                        <span class="basket-favorite-modal-item-info-header-title-circle color-circle"></span>
+                                        coppelia
+                                    </div>
+
+                                    <div class="basket-favorite-modal-item-info-header-additional">
+                                        Лампа настольная
+                                    </div>
+                                </div>
+
+                                <div class="basket-favorite-modal-item-info-header-trash">
+                                    <svg viewBox="0 0 29 29" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path id="Vector"
+                                              d="M26.14 5.08C24.16 4.87 22.18 4.72 20.19 4.61L20.19 4.59L19.92 2.93C19.74 1.76 19.47 0 16.59 0L13.37 0C10.5 0 10.23 1.68 10.03 2.92L9.78 4.56C8.63 4.63 7.49 4.71 6.34 4.82L3.84 5.08C3.32 5.13 2.95 5.6 3 6.13C3.05 6.65 3.49 7.03 4.01 6.98L6.52 6.73C12.96 6.06 19.45 6.32 25.97 7C26.01 7 26.03 7 26.07 7C26.54 7 26.94 6.62 26.99 6.13C27.03 5.6 26.66 5.13 26.14 5.08Z"
+                                              fill="#D9FF5A" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                        <path id="Vector"
+                                              d="M23.59 9.46C23.3 9.16 22.91 9 22.51 9L7.48 9C7.08 9 6.67 9.16 6.4 9.46C6.13 9.76 5.97 10.17 6 10.59L6.73 22.89C6.87 24.72 7.03 27 11.18 27L18.81 27C22.96 27 23.12 24.73 23.26 22.89L23.99 10.6C24.02 10.17 23.86 9.76 23.59 9.46ZM16.97 20.99L13.01 20.99C12.52 20.99 12.12 20.58 12.12 20.09C12.12 19.6 12.52 19.19 13.01 19.19L16.97 19.19C17.46 19.19 17.86 19.6 17.86 20.09C17.86 20.58 17.46 20.99 16.97 20.99ZM17.97 16.19L12.02 16.19C11.54 16.19 11.13 15.78 11.13 15.29C11.13 14.8 11.54 14.39 12.02 14.39L17.97 14.39C18.45 14.39 18.86 14.8 18.86 15.29C18.86 15.78 18.45 16.19 17.97 16.19Z"
+                                              fill="#D9FF5A" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="basket-favorite-modal-item-info-footer">
+                                <div class="basket-favorite-modal-item-info-footer-price">
+                                    150 000 <span class="price-span">₽</span>
+                                </div>
+
+                                <div class="basket-favorite-modal-item-info-footer-counter">
+                                    <button class="basket-favorite-modal-item-info-footer-counter-reduce basket-favorite-modal-counter-button disabled">
+                                        -
+                                    </button>
+
+                                    <div class="basket-favorite-modal-item-info-footer-counter-count">1</div>
+
+                                    <button class="basket-favorite-modal-item-info-footer-counter-increase basket-favorite-modal-counter-button">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="basket-favorite-modal-item">
+                        <div class="basket-favorite-modal-item-image">
+                            <img src="static/images/basket-1.png" alt="">
+                        </div>
+
+                        <div class="basket-favorite-modal-item-info">
+                            <div class="basket-favorite-modal-item-info-header">
+                                <div class="basket-favorite-modal-item-info-header-text">
+                                    <div class="basket-favorite-modal-item-info-header-title">
+                                        <span class="basket-favorite-modal-item-info-header-title-circle color-circle"></span>
+                                        coppelia
+                                    </div>
+
+                                    <div class="basket-favorite-modal-item-info-header-additional">
+                                        Лампа настольная
+                                    </div>
+                                </div>
+
+                                <div class="basket-favorite-modal-item-info-header-trash">
+                                    <svg viewBox="0 0 29 29" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path id="Vector"
+                                              d="M26.14 5.08C24.16 4.87 22.18 4.72 20.19 4.61L20.19 4.59L19.92 2.93C19.74 1.76 19.47 0 16.59 0L13.37 0C10.5 0 10.23 1.68 10.03 2.92L9.78 4.56C8.63 4.63 7.49 4.71 6.34 4.82L3.84 5.08C3.32 5.13 2.95 5.6 3 6.13C3.05 6.65 3.49 7.03 4.01 6.98L6.52 6.73C12.96 6.06 19.45 6.32 25.97 7C26.01 7 26.03 7 26.07 7C26.54 7 26.94 6.62 26.99 6.13C27.03 5.6 26.66 5.13 26.14 5.08Z"
+                                              fill="#D9FF5A" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                        <path id="Vector"
+                                              d="M23.59 9.46C23.3 9.16 22.91 9 22.51 9L7.48 9C7.08 9 6.67 9.16 6.4 9.46C6.13 9.76 5.97 10.17 6 10.59L6.73 22.89C6.87 24.72 7.03 27 11.18 27L18.81 27C22.96 27 23.12 24.73 23.26 22.89L23.99 10.6C24.02 10.17 23.86 9.76 23.59 9.46ZM16.97 20.99L13.01 20.99C12.52 20.99 12.12 20.58 12.12 20.09C12.12 19.6 12.52 19.19 13.01 19.19L16.97 19.19C17.46 19.19 17.86 19.6 17.86 20.09C17.86 20.58 17.46 20.99 16.97 20.99ZM17.97 16.19L12.02 16.19C11.54 16.19 11.13 15.78 11.13 15.29C11.13 14.8 11.54 14.39 12.02 14.39L17.97 14.39C18.45 14.39 18.86 14.8 18.86 15.29C18.86 15.78 18.45 16.19 17.97 16.19Z"
+                                              fill="#D9FF5A" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="basket-favorite-modal-item-info-footer">
+                                <div class="basket-favorite-modal-item-info-footer-price">
+                                    150 000 <span class="price-span">₽</span>
+                                </div>
+
+                                <div class="basket-favorite-modal-item-info-footer-counter">
+                                    <button class="basket-favorite-modal-item-info-footer-counter-reduce basket-favorite-modal-counter-button disabled">
+                                        -
+                                    </button>
+
+                                    <div class="basket-favorite-modal-item-info-footer-counter-count">1</div>
+
+                                    <button class="basket-favorite-modal-item-info-footer-counter-increase basket-favorite-modal-counter-button">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="basket-favorite-modal-footer">
+                    <div class="basket-favorite-modal-footer-total">
+                        <div class="basket-favorite-modal-footer-total-text">
+                            итого:
+                        </div>
+
+                        <div class="basket-favorite-modal-footer-total-sum">
+                            450 000 <span class="price-span">₽</span>
+                        </div>
+                    </div>
+
+                    <button class="basket-favorite-modal-footer-button button-buy">
+                        Оформить
+                    </button>
+                </div>
+            </div>
+
+            <div class="basket-favorite-modal favorite-modal modal" id="favorite-modal">
+                <div class="modal-close" id="favorite-modal-close">
+                    <svg viewBox="0 0 36 36" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector" d="M27 9L9 27" stroke="#FFFFFF" stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round" stroke-linecap="round"/>
+                        <path id="Vector" d="M9 9L27 27" stroke="#FFFFFF" stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <div class="basket-favorite-modal-title">
+                    товары в избранном
+                </div>
+
+                <div class="basket-favorite-modal-items">
+                    <div class="basket-favorite-modal-item">
+                        <div class="basket-favorite-modal-item-image">
+                            <img src="static/images/basket-1.png" alt="">
+                        </div>
+
+                        <div class="basket-favorite-modal-item-info">
+                            <div class="basket-favorite-modal-item-info-header">
+                                <div class="basket-favorite-modal-item-info-header-text">
+                                    <div class="basket-favorite-modal-item-info-header-title">
+                                        <span class="basket-favorite-modal-item-info-header-title-circle color-circle"></span>
+                                        coppelia
+                                    </div>
+
+                                    <div class="basket-favorite-modal-item-info-header-additional">
+                                        Лампа настольная
+                                    </div>
+                                </div>
+
+                                <button class="card-modal-stroke-one-button favorite-button button-circle active">
+                                    <svg viewBox="0 0 26 23" xmlns="http://www.w3.org/2000/svg">
+                                        <path id="Vector"
+                                              d="M21.1 1.48C20.33 1.16 19.51 1 18.68 1C17.85 1 17.03 1.16 16.26 1.48C15.49 1.8 14.8 2.26 14.21 2.85L13 4.07L11.78 2.85C10.59 1.66 8.99 1 7.31 1C5.64 1 4.03 1.66 2.84 2.85C1.66 4.04 1 5.65 1 7.33C1 9.01 1.66 10.62 2.84 11.81L4.06 13.03L13 22L21.93 13.03L23.14 11.81C23.73 11.22 24.2 10.53 24.51 9.76C24.83 8.99 25 8.16 25 7.33C25 6.5 24.83 5.68 24.51 4.91C24.2 4.14 23.73 3.44 23.14 2.85C22.56 2.26 21.86 1.8 21.1 1.48Z"
+                                              stroke-opacity="1.000000" stroke-width="2.000000"
+                                              stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="basket-favorite-modal-item-info-footer">
+                                <div class="basket-favorite-modal-item-info-footer-price">
+                                    150 000 <span class="price-span">₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="basket-favorite-modal-item">
+                        <div class="basket-favorite-modal-item-image">
+                            <img src="static/images/basket-2.png" alt="">
+                        </div>
+
+                        <div class="basket-favorite-modal-item-info">
+                            <div class="basket-favorite-modal-item-info-header">
+                                <div class="basket-favorite-modal-item-info-header-text">
+                                    <div class="basket-favorite-modal-item-info-header-title">
+                                        <span class="basket-favorite-modal-item-info-header-title-circle color-circle"></span>
+                                        coppelia
+                                    </div>
+
+                                    <div class="basket-favorite-modal-item-info-header-additional">
+                                        Лампа настольная
+                                    </div>
+                                </div>
+
+                                <button class="card-modal-stroke-one-button favorite-button button-circle active">
+                                    <svg viewBox="0 0 26 23" xmlns="http://www.w3.org/2000/svg">
+                                        <path id="Vector"
+                                              d="M21.1 1.48C20.33 1.16 19.51 1 18.68 1C17.85 1 17.03 1.16 16.26 1.48C15.49 1.8 14.8 2.26 14.21 2.85L13 4.07L11.78 2.85C10.59 1.66 8.99 1 7.31 1C5.64 1 4.03 1.66 2.84 2.85C1.66 4.04 1 5.65 1 7.33C1 9.01 1.66 10.62 2.84 11.81L4.06 13.03L13 22L21.93 13.03L23.14 11.81C23.73 11.22 24.2 10.53 24.51 9.76C24.83 8.99 25 8.16 25 7.33C25 6.5 24.83 5.68 24.51 4.91C24.2 4.14 23.73 3.44 23.14 2.85C22.56 2.26 21.86 1.8 21.1 1.48Z"
+                                              stroke-opacity="1.000000" stroke-width="2.000000"
+                                              stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="basket-favorite-modal-item-info-footer">
+                                <div class="basket-favorite-modal-item-info-footer-price">
+                                    150 000 <span class="price-span">₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auth-modal modal show" id="auth-modal">
+                <div class="basket-favorite-modal-close modal-close" id="auth-modal-close">
+                    <svg viewBox="0 0 36 36" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector" d="M27 9L9 27" stroke="#FFFFFF" stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round" stroke-linecap="round"/>
+                        <path id="Vector" d="M9 9L27 27" stroke="#FFFFFF" stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <div class="basket-favorite-modal-title auth-modal-title" id="auth-modal-title">Вход</div>
+
+                <form class="auth-modal-form">
+                    <input type="email" class="auth-modal-form-input" placeholder="E-MAIL" id="email-input">
+                    <input type="text" class="auth-modal-form-input" placeholder="ПАРОЛЬ" id="password-input">
+                    <input type="text" class="auth-modal-form-input" placeholder="ПОВТОРИТЕ ПАРОЛЬ"
+                           id="password-repeat-input">
+
+                    <button id="auth-modal-form-button-sign-up" type="button"
+                            class="basket-favorite-modal-footer-button auth-modal-form-button auth-modal-form-button-sign-up button-buy">
+                        Регистрация
+                    </button>
+
+                    <button id="auth-modal-form-button-sign-in" type="button"
+                            class="basket-favorite-modal-footer-button auth-modal-form-button auth-modal-form-button-sign-in button-buy">
+                        Войти
+                    </button>
+                </form>
+
+                <div class="auth-modal-sign-common auth-modal-sign-in" id="auth-modal-sign-in">
+                    <span class="auth-modal-sign-in-arrow">
+                        <svg viewBox="0 0 42.0039 13.3213" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path id="Arrow 1"
+                                  d="M3.41 5.66L7.36 1.71C7.76 1.31 7.76 0.69 7.36 0.29C6.97 -0.1 6.34 -0.1 5.95 0.29L0.29 5.95C-0.1 6.34 -0.1 6.97 0.29 7.36L5.95 13.02C6.34 13.42 6.97 13.42 7.36 13.02C7.76 12.62 7.76 12 7.36 11.61L3.41 7.66L42 7.66L42 5.66L3.41 5.66Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+
+                    Вход
+                </div>
+
+                <div class="auth-modal-sign-common auth-modal-sign-up" id="auth-modal-sign-common">
+                    <span class="auth-modal-sign-up-additional">
+                        нет аккаунта?
+                    </span>
+
+                    <span id="auth-modal-sign-up">
+                        Регистрация
+                        <span class="auth-modal-sign-up-arrow">
+                        <svg viewBox="0 0 42.0041 13.3213" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path id="Arrow 1"
+                                  d="M38.58 5.66L34.63 1.71C34.24 1.31 34.24 0.69 34.63 0.29C35.03 -0.1 35.65 -0.1 36.05 0.29L41.7 5.95C42.1 6.34 42.1 6.97 41.7 7.36L36.05 13.02C35.65 13.42 35.03 13.42 34.63 13.02C34.24 12.62 34.24 12 34.63 11.61L38.58 7.66L0 7.66L0 5.66L38.58 5.66Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <div class="categories-title">
+                категории
+            </div>
+
+            <div class="categories-items">
+                <div class="categories-item">
+                    <span class="categories-item-bg">
+                        <svg viewBox="0 0 388 461.804" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path id="Subtract"
+                                  d="M0 250C0 111.929 86.8564 0 194 0C262.033 0 321.886 45.1279 356.518 113.422C362.796 125.804 357.939 140.332 348.349 150.369C330.108 169.461 321.908 191.971 330.992 211.451C337.984 226.447 355.439 234.708 375.339 236.938C382.227 237.709 388 243.069 388 250C388 334.762 355.266 409.671 305.2 454.881C290.028 468.581 267.536 458.018 256.602 440.747C242.032 417.737 219.628 403 194.5 403C169.191 403 146.645 417.951 132.085 441.246C121.263 458.562 98.8555 469.224 83.625 455.622C33.0938 410.493 0 335.227 0 250Z"
+                                  clip-rule="evenodd" fill="#CBB6FF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+
+
+                    <div class="categories-item-title">
+                        напольные зеркала
+                    </div>
+
+                    <div class="categories-item-image">
+                        <img src="static/images/category-1.png" alt="">
+                    </div>
+
+                    <div class="categories-item-additional">
+                        <svg viewBox="0 0 93.9355 198.149" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M88.65 188.3L87.41 187.34L80.92 189.03L84.2 184.83L82.81 183.74L77.88 190.05L79.12 191.01L85.61 189.33L82.33 193.53L83.72 194.61L88.65 188.3Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M78.68 180.52Q78.35 179.61 77.55 178.86Q76.42 177.81 75.29 177.74Q74.5 177.7 73.92 178.04Q73.68 178.19 73.47 178.41Q73.05 178.87 72.93 179.39Q72.8 179.97 73.04 180.63Q72.63 180.56 72.25 180.65Q71.71 180.78 71.26 181.27Q71 181.55 70.87 181.88Q70.67 182.37 70.73 182.96Q70.84 183.98 71.88 184.95Q72.6 185.62 73.44 185.88Q73.64 185.94 73.85 185.98Q74.18 186.04 74.5 186.01Q75.23 185.95 75.91 185.45L74.63 184.25Q74.28 184.45 73.94 184.45Q73.4 184.44 72.86 183.94Q72.42 183.53 72.35 183.09Q72.31 182.91 72.35 182.74Q72.4 182.52 72.58 182.32Q72.81 182.07 73.08 182.02Q73.19 181.99 73.31 182C73.58 182.03 73.85 182.17 74.12 182.43L74.79 183.05L75.67 182.1L74.98 181.46Q74.49 181 74.42 180.54C74.36 180.24 74.45 179.96 74.68 179.71C74.91 179.47 75.19 179.37 75.52 179.4C75.85 179.43 76.19 179.6 76.56 179.93Q77.19 180.52 77.22 181.14Q77.24 181.48 77.09 181.82L78.41 183.06Q78.8 182.43 78.86 181.77Q78.9 181.32 78.79 180.87Q78.74 180.69 78.68 180.52Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M67.18 179.8L72.94 174.24L71.71 172.98L67.09 177.44L64.66 174.94L63.53 176.02L67.18 179.8Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M63.61 164.66Q62.99 164.4 62.27 164.35Q61.46 164.29 60.73 164.52Q59.93 164.77 59.24 165.37Q58.54 165.98 58.18 166.75Q57.87 167.43 57.82 168.22Q57.76 168.96 57.95 169.63Q58.19 170.51 58.85 171.26Q59.5 172.01 60.31 172.38Q60.97 172.67 61.73 172.72Q62.5 172.78 63.19 172.57Q64.02 172.32 64.74 171.7Q65.45 171.08 65.81 170.31Q66.13 169.64 66.19 168.85Q66.24 168.11 66.04 167.44Q65.79 166.57 65.13 165.8Q64.46 165.03 63.61 164.66ZM63 166.21Q63.5 166.42 63.9 166.88Q64.31 167.35 64.45 167.89Q64.54 168.26 64.5 168.66Q64.46 169.02 64.33 169.34Q64.09 169.91 63.58 170.36Q63.05 170.82 62.44 170.96Q62.12 171.04 61.78 171.03Q61.35 171.01 60.98 170.86Q60.48 170.65 60.08 170.19Q59.7 169.75 59.57 169.24Q59.47 168.85 59.52 168.42Q59.55 168.05 59.68 167.73Q59.91 167.17 60.42 166.72Q60.91 166.29 61.49 166.14Q61.84 166.04 62.23 166.06Q62.64 166.07 63 166.21Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M54.82 163.85L59.89 159.89L58.81 158.5L53.74 162.46L52.19 160.48L50.96 161.44L55.07 166.7L56.3 165.74L54.82 163.85Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M51.88 149.15Q51.29 148.82 50.58 148.7Q49.77 148.55 49.03 148.71Q48.21 148.87 47.46 149.4Q46.69 149.93 46.26 150.66Q45.88 151.3 45.74 152.08Q45.61 152.81 45.73 153.5Q45.88 154.39 46.45 155.22Q47.02 156.03 47.79 156.48Q48.41 156.84 49.17 156.97Q49.92 157.1 50.63 156.97Q51.49 156.81 52.27 156.27Q53.03 155.73 53.48 155Q53.86 154.37 54 153.58Q54.13 152.86 54.01 152.17Q53.85 151.27 53.27 150.45Q52.68 149.61 51.88 149.15ZM51.1 150.63Q51.58 150.88 51.93 151.38Q52.29 151.89 52.37 152.45Q52.42 152.83 52.34 153.22Q52.26 153.58 52.1 153.88Q51.81 154.42 51.25 154.81Q50.67 155.21 50.05 155.29Q49.73 155.34 49.39 155.29Q48.97 155.23 48.62 155.04Q48.14 154.78 47.79 154.28Q47.45 153.8 47.38 153.28Q47.32 152.88 47.41 152.46Q47.48 152.1 47.65 151.79Q47.93 151.25 48.49 150.87Q49.02 150.49 49.61 150.39Q49.98 150.34 50.36 150.39Q50.77 150.45 51.1 150.63Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M42.86 149.24L49.71 145.12L47.6 141.59Q46.85 140.35 45.9 140.08Q45.44 139.95 45 140Q44.52 140.06 44.07 140.33Q43.58 140.63 43.33 141.07Q43.02 141.59 43.06 142.31Q42.56 142.16 42.1 142.25Q41.77 142.31 41.47 142.49Q41.07 142.74 40.81 143.09Q40.55 143.47 40.45 143.96Q40.27 144.93 40.98 146.11L42.86 149.24ZM43.71 144.39L44.72 146.07L43.17 147L42.16 145.32Q41.87 144.83 41.98 144.46Q42.07 144.19 42.41 143.99C42.68 143.82 42.93 143.79 43.17 143.88C43.38 143.98 43.57 144.15 43.71 144.39ZM46.33 142.37L47.53 144.38L45.82 145.41L44.61 143.41Q44.36 142.97 44.41 142.59Q44.42 142.57 44.42 142.55C44.46 142.28 44.61 142.06 44.88 141.9C45.15 141.74 45.42 141.7 45.68 141.79C45.93 141.88 46.15 142.07 46.33 142.37Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M44.52 136.34C44.47 136.16 44.36 135.89 44.17 135.55Q43.88 134.99 43.42 134.67Q43.12 134.47 42.75 134.37C42.12 134.18 41.4 134.3 40.6 134.73L37.25 136.51L35.85 133.87L41.53 130.85L40.7 129.29L33.64 133.05L36.7 138.8L41.19 136.41Q41.92 136.02 42.33 136.07C42.6 136.11 42.81 136.28 42.96 136.57Q43.04 136.73 43.18 137.05L44.52 136.34Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M37.46 125.9Q37.52 124.89 37.03 123.84Q36.51 122.71 35.62 122.09Q35.46 121.98 35.29 121.88Q34.6 121.49 33.87 121.41Q33.42 121.35 32.95 121.42L33.73 123.08Q34.17 123.09 34.54 123.26Q35.2 123.58 35.6 124.44Q35.92 125.12 35.86 125.77Q35.83 126.02 35.76 126.25Q35.62 126.67 35.36 126.98Q35.08 127.33 34.65 127.55L31.96 121.77C30.7 122.27 29.85 123.03 29.39 124.08Q29.12 124.7 29.08 125.33Q29.01 126.32 29.48 127.34Q30.02 128.48 30.91 129.09Q31.32 129.37 31.82 129.54Q32.31 129.71 32.81 129.75Q33.88 129.83 34.99 129.31Q36.07 128.81 36.69 127.97Q37.02 127.53 37.22 127Q37.42 126.46 37.46 125.9ZM31.5 127.63Q31.09 127.3 30.84 126.76Q30.65 126.36 30.63 125.95Q30.61 125.64 30.69 125.31Q30.7 125.27 30.71 125.23Q30.91 124.55 31.62 124.01L33.5 128.03C32.9 128.18 32.38 128.13 31.92 127.9Q31.69 127.79 31.5 127.63Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M27.26 119.63L34.68 116.63L34.02 115L30.99 116.22L29.55 112.65L32.57 111.42L31.91 109.79L24.49 112.79L25.15 114.42L28.09 113.23L29.54 116.81L26.6 118L27.26 119.63Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M29.94 106.17L29.43 104.68L23.06 102.56L28.1 100.83L27.53 99.16L19.97 101.77L20.48 103.25L26.84 105.37L21.8 107.11L22.38 108.77L29.94 106.17Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M25.45 93.38Q25.68 92.39 25.36 91.27Q25.02 90.08 24.24 89.32Q24.1 89.19 23.94 89.06Q23.32 88.58 22.61 88.38Q22.18 88.25 21.71 88.24L22.22 90.01Q22.65 90.09 22.98 90.31Q23.59 90.72 23.85 91.64Q24.06 92.37 23.89 93Q23.83 93.23 23.72 93.46Q23.52 93.85 23.22 94.12Q22.88 94.41 22.42 94.56L20.67 88.44C19.35 88.73 18.39 89.35 17.78 90.32Q17.41 90.89 17.27 91.5Q17.05 92.47 17.36 93.55Q17.7 94.76 18.49 95.5Q18.85 95.84 19.31 96.08Q19.77 96.33 20.26 96.45Q21.31 96.7 22.49 96.36Q23.63 96.03 24.38 95.3Q24.77 94.92 25.05 94.42Q25.33 93.92 25.45 93.38ZM19.3 94.15Q18.95 93.76 18.78 93.19Q18.66 92.77 18.7 92.36Q18.74 92.04 18.87 91.74Q18.88 91.7 18.9 91.66Q19.2 91.01 19.99 90.6L21.21 94.86C20.6 94.91 20.09 94.79 19.67 94.48Q19.47 94.34 19.3 94.15Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ" d="" fill="#FFFFFF" fill-opacity="1.000000"
+                                  fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M14.63 81.13L22.45 79.46L22.09 77.74L18.89 78.42L18.09 74.65L21.28 73.97L20.92 72.25L13.09 73.91L13.46 75.63L16.56 74.98L17.36 78.75L14.26 79.41L14.63 81.13Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M19.22 66.25Q19.39 65.55 19.27 64.77Q19.17 64.17 18.89 63.67Q18.8 63.5 18.68 63.34Q18.21 62.72 17.65 62.44L18.71 62.27L18.43 60.53L10.53 61.78L10.81 63.52L11.86 63.35C11.57 63.65 11.34 64.04 11.18 64.53C11.01 65.02 10.96 65.54 11.05 66.08Q11.17 66.85 11.55 67.46Q11.96 68.13 12.68 68.6Q13.23 68.97 13.84 69.14Q14.74 69.39 15.76 69.23Q16.78 69.07 17.56 68.55Q18.08 68.2 18.5 67.68Q19.03 67.01 19.22 66.25ZM17.57 65.79Q17.45 66.18 17.18 66.51Q16.97 66.77 16.71 66.97Q16.19 67.35 15.48 67.46Q14.76 67.58 14.16 67.37Q13.85 67.27 13.57 67.08Q13.21 66.85 12.98 66.52Q12.67 66.09 12.58 65.51Q12.49 64.93 12.65 64.43Q12.77 64.04 13.04 63.7Q13.25 63.44 13.5 63.25Q14.02 62.87 14.73 62.75Q15.45 62.64 16.06 62.85Q16.36 62.95 16.64 63.13Q17 63.37 17.24 63.7Q17.54 64.13 17.64 64.71Q17.73 65.29 17.57 65.79Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ" d="" fill="#FFFFFF" fill-opacity="1.000000"
+                                  fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M17.45 50.03Q17.81 49.13 17.72 48.04Q17.58 46.5 16.79 45.7Q16.22 45.13 15.57 45Q15.29 44.95 14.99 44.97Q14.37 45.03 13.93 45.34Q13.45 45.68 13.18 46.34Q12.92 46 12.59 45.83Q12.09 45.56 11.43 45.62Q11.05 45.66 10.73 45.81Q10.26 46.04 9.91 46.53Q9.31 47.35 9.43 48.77Q9.51 49.75 9.97 50.51Q10.08 50.69 10.21 50.85Q10.41 51.12 10.67 51.31Q11.25 51.75 12.09 51.84L11.94 50.09Q11.55 50.01 11.3 49.78Q10.9 49.41 10.83 48.68Q10.78 48.07 11.02 47.7Q11.12 47.54 11.25 47.44Q11.44 47.31 11.71 47.28Q12.05 47.26 12.29 47.39Q12.39 47.45 12.47 47.54C12.65 47.74 12.75 48.02 12.79 48.4L12.86 49.3L14.16 49.19L14.07 48.25Q14.02 47.58 14.27 47.19C14.43 46.93 14.68 46.78 15.02 46.75C15.35 46.73 15.63 46.83 15.85 47.08C16.07 47.32 16.21 47.68 16.27 48.17Q16.34 49.03 15.95 49.51Q15.74 49.78 15.39 49.93L15.55 51.73Q16.26 51.53 16.75 51.08Q17.07 50.77 17.29 50.36Q17.38 50.2 17.45 50.03Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M16.65 38.39Q16.9 37.71 16.86 36.92Q16.82 36.32 16.6 35.79Q16.53 35.61 16.43 35.44Q16.02 34.77 15.49 34.43L16.56 34.38L16.47 32.62L8.48 33.04L8.57 34.79L9.64 34.74C9.32 35 9.05 35.37 8.84 35.84C8.62 36.31 8.52 36.82 8.55 37.36Q8.59 38.14 8.9 38.79Q9.24 39.5 9.91 40.04Q10.42 40.46 11 40.7Q11.87 41.05 12.9 40.99Q13.93 40.94 14.76 40.5Q15.32 40.21 15.79 39.74Q16.39 39.12 16.65 38.39ZM15.06 37.76Q14.9 38.13 14.6 38.44Q14.36 38.67 14.09 38.84Q13.53 39.16 12.81 39.2Q12.09 39.24 11.5 38.97Q11.21 38.84 10.95 38.63Q10.62 38.35 10.42 38Q10.16 37.54 10.13 36.96Q10.1 36.37 10.31 35.89Q10.47 35.52 10.77 35.21Q11.01 34.97 11.29 34.81Q11.84 34.48 12.56 34.44Q13.28 34.4 13.87 34.67Q14.16 34.81 14.42 35.02Q14.75 35.29 14.95 35.64Q15.21 36.1 15.24 36.69Q15.27 37.28 15.06 37.76Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M12.54 27.04L15.95 23.49L15.95 21.17L11.88 25.38L7.95 21.74L7.95 23.89L11.37 27.04L7.95 27.04L7.95 28.8L15.95 28.8L15.95 27.04L12.54 27.04Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M15.93 17.36Q16.23 16.71 16.26 15.93Q16.28 15.32 16.1 14.78Q16.04 14.59 15.96 14.41Q15.61 13.71 15.11 13.32L16.19 13.36L16.25 11.6L8.25 11.32L8.19 13.08L9.26 13.12C8.91 13.35 8.61 13.69 8.36 14.14C8.1 14.59 7.96 15.09 7.94 15.64Q7.91 16.42 8.17 17.09Q8.45 17.82 9.06 18.43Q9.53 18.89 10.1 19.17Q10.93 19.6 11.96 19.63Q13 19.67 13.86 19.31Q14.44 19.06 14.94 18.63Q15.6 18.07 15.93 17.36ZM14.4 16.6Q14.2 16.95 13.87 17.24Q13.62 17.45 13.33 17.59Q12.75 17.87 12.03 17.84Q11.3 17.82 10.75 17.5Q10.46 17.34 10.23 17.11Q9.92 16.8 9.75 16.44Q9.53 15.96 9.55 15.37Q9.57 14.78 9.82 14.32Q10.02 13.97 10.35 13.69Q10.6 13.47 10.89 13.33Q11.47 13.05 12.19 13.08Q12.92 13.1 13.47 13.42Q13.75 13.58 13.99 13.81Q14.3 14.12 14.47 14.48Q14.69 14.96 14.67 15.55Q14.65 16.14 14.4 16.6Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M15.78 6.77Q16.28 5.94 16.35 4.85Q16.46 3.3 15.8 2.39Q15.34 1.74 14.71 1.51Q14.44 1.41 14.14 1.39Q13.52 1.34 13.03 1.58Q12.5 1.85 12.14 2.45Q11.94 2.08 11.63 1.85Q11.19 1.52 10.53 1.47Q10.15 1.44 9.8 1.55Q9.3 1.7 8.88 2.13Q8.15 2.85 8.05 4.27Q7.99 5.25 8.32 6.07Q8.39 6.26 8.5 6.45Q8.66 6.74 8.88 6.97Q9.39 7.5 10.2 7.72L10.33 5.96Q9.96 5.82 9.74 5.55Q9.41 5.13 9.46 4.4Q9.5 3.79 9.8 3.46Q9.91 3.32 10.06 3.24Q10.27 3.14 10.54 3.16Q10.88 3.18 11.09 3.35Q11.18 3.43 11.25 3.53C11.39 3.75 11.45 4.05 11.43 4.42L11.36 5.33L12.66 5.42L12.72 4.48Q12.77 3.81 13.08 3.46C13.28 3.23 13.55 3.13 13.89 3.15C14.22 3.17 14.48 3.32 14.66 3.6C14.85 3.87 14.93 4.25 14.9 4.74Q14.84 5.6 14.38 6.02Q14.13 6.25 13.76 6.35L13.64 8.15Q14.37 8.06 14.92 7.69Q15.29 7.44 15.57 7.07Q15.68 6.92 15.78 6.77Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>
+                    </div>
+
+                    <div class="categories-item-count">
+                        4 <span>шт</span>
+                    </div>
+
+                    <button class="categories-item-button button-circle">
+                        <span>
+                            <svg viewBox="0 0 22 35" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector"
+                                      d="M21 23.66C19.94 23.66 18.35 24.7 17.02 25.75C15.31 27.1 13.81 28.72 12.67 30.57C11.82 31.96 11 33.64 11 35M11 35C11 33.64 10.17 31.96 9.32 30.57C8.17 28.72 6.68 27.1 4.97 25.75C3.64 24.7 2.05 23.66 1 23.66M11 35L11 1"
+                                      stroke="#D9FF5A" stroke-opacity="1.000000" stroke-width="2.000000"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="categories-item">
+                    <span class="categories-item-bg">
+                        <svg viewBox="0 0 388 461.804" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path id="Subtract"
+                                  d="M0 250C0 111.929 86.8564 0 194 0C262.033 0 321.886 45.1279 356.518 113.422C362.796 125.804 357.939 140.332 348.349 150.369C330.108 169.461 321.908 191.971 330.992 211.451C337.984 226.447 355.439 234.708 375.339 236.938C382.227 237.709 388 243.069 388 250C388 334.762 355.266 409.671 305.2 454.881C290.028 468.581 267.536 458.018 256.602 440.747C242.032 417.737 219.628 403 194.5 403C169.191 403 146.645 417.951 132.085 441.246C121.263 458.562 98.8555 469.224 83.625 455.622C33.0938 410.493 0 335.227 0 250Z"
+                                  clip-rule="evenodd" fill="#CBB6FF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+
+
+                    <div class="categories-item-title">
+                        торшеры и лампы
+                    </div>
+
+                    <div class="categories-item-image">
+                        <img src="static/images/category-2.png" alt="">
+                    </div>
+
+                    <div class="categories-item-additional">
+                        <svg viewBox="0 0 93.9355 198.149" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M88.65 188.3L87.41 187.34L80.92 189.03L84.2 184.83L82.81 183.74L77.88 190.05L79.12 191.01L85.61 189.33L82.33 193.53L83.72 194.61L88.65 188.3Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M78.68 180.52Q78.35 179.61 77.55 178.86Q76.42 177.81 75.29 177.74Q74.5 177.7 73.92 178.04Q73.68 178.19 73.47 178.41Q73.05 178.87 72.93 179.39Q72.8 179.97 73.04 180.63Q72.63 180.56 72.25 180.65Q71.71 180.78 71.26 181.27Q71 181.55 70.87 181.88Q70.67 182.37 70.73 182.96Q70.84 183.98 71.88 184.95Q72.6 185.62 73.44 185.88Q73.64 185.94 73.85 185.98Q74.18 186.04 74.5 186.01Q75.23 185.95 75.91 185.45L74.63 184.25Q74.28 184.45 73.94 184.45Q73.4 184.44 72.86 183.94Q72.42 183.53 72.35 183.09Q72.31 182.91 72.35 182.74Q72.4 182.52 72.58 182.32Q72.81 182.07 73.08 182.02Q73.19 181.99 73.31 182C73.58 182.03 73.85 182.17 74.12 182.43L74.79 183.05L75.67 182.1L74.98 181.46Q74.49 181 74.42 180.54C74.36 180.24 74.45 179.96 74.68 179.71C74.91 179.47 75.19 179.37 75.52 179.4C75.85 179.43 76.19 179.6 76.56 179.93Q77.19 180.52 77.22 181.14Q77.24 181.48 77.09 181.82L78.41 183.06Q78.8 182.43 78.86 181.77Q78.9 181.32 78.79 180.87Q78.74 180.69 78.68 180.52Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M67.18 179.8L72.94 174.24L71.71 172.98L67.09 177.44L64.66 174.94L63.53 176.02L67.18 179.8Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M63.61 164.66Q62.99 164.4 62.27 164.35Q61.46 164.29 60.73 164.52Q59.93 164.77 59.24 165.37Q58.54 165.98 58.18 166.75Q57.87 167.43 57.82 168.22Q57.76 168.96 57.95 169.63Q58.19 170.51 58.85 171.26Q59.5 172.01 60.31 172.38Q60.97 172.67 61.73 172.72Q62.5 172.78 63.19 172.57Q64.02 172.32 64.74 171.7Q65.45 171.08 65.81 170.31Q66.13 169.64 66.19 168.85Q66.24 168.11 66.04 167.44Q65.79 166.57 65.13 165.8Q64.46 165.03 63.61 164.66ZM63 166.21Q63.5 166.42 63.9 166.88Q64.31 167.35 64.45 167.89Q64.54 168.26 64.5 168.66Q64.46 169.02 64.33 169.34Q64.09 169.91 63.58 170.36Q63.05 170.82 62.44 170.96Q62.12 171.04 61.78 171.03Q61.35 171.01 60.98 170.86Q60.48 170.65 60.08 170.19Q59.7 169.75 59.57 169.24Q59.47 168.85 59.52 168.42Q59.55 168.05 59.68 167.73Q59.91 167.17 60.42 166.72Q60.91 166.29 61.49 166.14Q61.84 166.04 62.23 166.06Q62.64 166.07 63 166.21Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M54.82 163.85L59.89 159.89L58.81 158.5L53.74 162.46L52.19 160.48L50.96 161.44L55.07 166.7L56.3 165.74L54.82 163.85Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M51.88 149.15Q51.29 148.82 50.58 148.7Q49.77 148.55 49.03 148.71Q48.21 148.87 47.46 149.4Q46.69 149.93 46.26 150.66Q45.88 151.3 45.74 152.08Q45.61 152.81 45.73 153.5Q45.88 154.39 46.45 155.22Q47.02 156.03 47.79 156.48Q48.41 156.84 49.17 156.97Q49.92 157.1 50.63 156.97Q51.49 156.81 52.27 156.27Q53.03 155.73 53.48 155Q53.86 154.37 54 153.58Q54.13 152.86 54.01 152.17Q53.85 151.27 53.27 150.45Q52.68 149.61 51.88 149.15ZM51.1 150.63Q51.58 150.88 51.93 151.38Q52.29 151.89 52.37 152.45Q52.42 152.83 52.34 153.22Q52.26 153.58 52.1 153.88Q51.81 154.42 51.25 154.81Q50.67 155.21 50.05 155.29Q49.73 155.34 49.39 155.29Q48.97 155.23 48.62 155.04Q48.14 154.78 47.79 154.28Q47.45 153.8 47.38 153.28Q47.32 152.88 47.41 152.46Q47.48 152.1 47.65 151.79Q47.93 151.25 48.49 150.87Q49.02 150.49 49.61 150.39Q49.98 150.34 50.36 150.39Q50.77 150.45 51.1 150.63Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M42.86 149.24L49.71 145.12L47.6 141.59Q46.85 140.35 45.9 140.08Q45.44 139.95 45 140Q44.52 140.06 44.07 140.33Q43.58 140.63 43.33 141.07Q43.02 141.59 43.06 142.31Q42.56 142.16 42.1 142.25Q41.77 142.31 41.47 142.49Q41.07 142.74 40.81 143.09Q40.55 143.47 40.45 143.96Q40.27 144.93 40.98 146.11L42.86 149.24ZM43.71 144.39L44.72 146.07L43.17 147L42.16 145.32Q41.87 144.83 41.98 144.46Q42.07 144.19 42.41 143.99C42.68 143.82 42.93 143.79 43.17 143.88C43.38 143.98 43.57 144.15 43.71 144.39ZM46.33 142.37L47.53 144.38L45.82 145.41L44.61 143.41Q44.36 142.97 44.41 142.59Q44.42 142.57 44.42 142.55C44.46 142.28 44.61 142.06 44.88 141.9C45.15 141.74 45.42 141.7 45.68 141.79C45.93 141.88 46.15 142.07 46.33 142.37Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M44.52 136.34C44.47 136.16 44.36 135.89 44.17 135.55Q43.88 134.99 43.42 134.67Q43.12 134.47 42.75 134.37C42.12 134.18 41.4 134.3 40.6 134.73L37.25 136.51L35.85 133.87L41.53 130.85L40.7 129.29L33.64 133.05L36.7 138.8L41.19 136.41Q41.92 136.02 42.33 136.07C42.6 136.11 42.81 136.28 42.96 136.57Q43.04 136.73 43.18 137.05L44.52 136.34Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M37.46 125.9Q37.52 124.89 37.03 123.84Q36.51 122.71 35.62 122.09Q35.46 121.98 35.29 121.88Q34.6 121.49 33.87 121.41Q33.42 121.35 32.95 121.42L33.73 123.08Q34.17 123.09 34.54 123.26Q35.2 123.58 35.6 124.44Q35.92 125.12 35.86 125.77Q35.83 126.02 35.76 126.25Q35.62 126.67 35.36 126.98Q35.08 127.33 34.65 127.55L31.96 121.77C30.7 122.27 29.85 123.03 29.39 124.08Q29.12 124.7 29.08 125.33Q29.01 126.32 29.48 127.34Q30.02 128.48 30.91 129.09Q31.32 129.37 31.82 129.54Q32.31 129.71 32.81 129.75Q33.88 129.83 34.99 129.31Q36.07 128.81 36.69 127.97Q37.02 127.53 37.22 127Q37.42 126.46 37.46 125.9ZM31.5 127.63Q31.09 127.3 30.84 126.76Q30.65 126.36 30.63 125.95Q30.61 125.64 30.69 125.31Q30.7 125.27 30.71 125.23Q30.91 124.55 31.62 124.01L33.5 128.03C32.9 128.18 32.38 128.13 31.92 127.9Q31.69 127.79 31.5 127.63Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M27.26 119.63L34.68 116.63L34.02 115L30.99 116.22L29.55 112.65L32.57 111.42L31.91 109.79L24.49 112.79L25.15 114.42L28.09 113.23L29.54 116.81L26.6 118L27.26 119.63Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M29.94 106.17L29.43 104.68L23.06 102.56L28.1 100.83L27.53 99.16L19.97 101.77L20.48 103.25L26.84 105.37L21.8 107.11L22.38 108.77L29.94 106.17Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M25.45 93.38Q25.68 92.39 25.36 91.27Q25.02 90.08 24.24 89.32Q24.1 89.19 23.94 89.06Q23.32 88.58 22.61 88.38Q22.18 88.25 21.71 88.24L22.22 90.01Q22.65 90.09 22.98 90.31Q23.59 90.72 23.85 91.64Q24.06 92.37 23.89 93Q23.83 93.23 23.72 93.46Q23.52 93.85 23.22 94.12Q22.88 94.41 22.42 94.56L20.67 88.44C19.35 88.73 18.39 89.35 17.78 90.32Q17.41 90.89 17.27 91.5Q17.05 92.47 17.36 93.55Q17.7 94.76 18.49 95.5Q18.85 95.84 19.31 96.08Q19.77 96.33 20.26 96.45Q21.31 96.7 22.49 96.36Q23.63 96.03 24.38 95.3Q24.77 94.92 25.05 94.42Q25.33 93.92 25.45 93.38ZM19.3 94.15Q18.95 93.76 18.78 93.19Q18.66 92.77 18.7 92.36Q18.74 92.04 18.87 91.74Q18.88 91.7 18.9 91.66Q19.2 91.01 19.99 90.6L21.21 94.86C20.6 94.91 20.09 94.79 19.67 94.48Q19.47 94.34 19.3 94.15Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ" d="" fill="#FFFFFF" fill-opacity="1.000000"
+                                  fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M14.63 81.13L22.45 79.46L22.09 77.74L18.89 78.42L18.09 74.65L21.28 73.97L20.92 72.25L13.09 73.91L13.46 75.63L16.56 74.98L17.36 78.75L14.26 79.41L14.63 81.13Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M19.22 66.25Q19.39 65.55 19.27 64.77Q19.17 64.17 18.89 63.67Q18.8 63.5 18.68 63.34Q18.21 62.72 17.65 62.44L18.71 62.27L18.43 60.53L10.53 61.78L10.81 63.52L11.86 63.35C11.57 63.65 11.34 64.04 11.18 64.53C11.01 65.02 10.96 65.54 11.05 66.08Q11.17 66.85 11.55 67.46Q11.96 68.13 12.68 68.6Q13.23 68.97 13.84 69.14Q14.74 69.39 15.76 69.23Q16.78 69.07 17.56 68.55Q18.08 68.2 18.5 67.68Q19.03 67.01 19.22 66.25ZM17.57 65.79Q17.45 66.18 17.18 66.51Q16.97 66.77 16.71 66.97Q16.19 67.35 15.48 67.46Q14.76 67.58 14.16 67.37Q13.85 67.27 13.57 67.08Q13.21 66.85 12.98 66.52Q12.67 66.09 12.58 65.51Q12.49 64.93 12.65 64.43Q12.77 64.04 13.04 63.7Q13.25 63.44 13.5 63.25Q14.02 62.87 14.73 62.75Q15.45 62.64 16.06 62.85Q16.36 62.95 16.64 63.13Q17 63.37 17.24 63.7Q17.54 64.13 17.64 64.71Q17.73 65.29 17.57 65.79Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ" d="" fill="#FFFFFF" fill-opacity="1.000000"
+                                  fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M17.45 50.03Q17.81 49.13 17.72 48.04Q17.58 46.5 16.79 45.7Q16.22 45.13 15.57 45Q15.29 44.95 14.99 44.97Q14.37 45.03 13.93 45.34Q13.45 45.68 13.18 46.34Q12.92 46 12.59 45.83Q12.09 45.56 11.43 45.62Q11.05 45.66 10.73 45.81Q10.26 46.04 9.91 46.53Q9.31 47.35 9.43 48.77Q9.51 49.75 9.97 50.51Q10.08 50.69 10.21 50.85Q10.41 51.12 10.67 51.31Q11.25 51.75 12.09 51.84L11.94 50.09Q11.55 50.01 11.3 49.78Q10.9 49.41 10.83 48.68Q10.78 48.07 11.02 47.7Q11.12 47.54 11.25 47.44Q11.44 47.31 11.71 47.28Q12.05 47.26 12.29 47.39Q12.39 47.45 12.47 47.54C12.65 47.74 12.75 48.02 12.79 48.4L12.86 49.3L14.16 49.19L14.07 48.25Q14.02 47.58 14.27 47.19C14.43 46.93 14.68 46.78 15.02 46.75C15.35 46.73 15.63 46.83 15.85 47.08C16.07 47.32 16.21 47.68 16.27 48.17Q16.34 49.03 15.95 49.51Q15.74 49.78 15.39 49.93L15.55 51.73Q16.26 51.53 16.75 51.08Q17.07 50.77 17.29 50.36Q17.38 50.2 17.45 50.03Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M16.65 38.39Q16.9 37.71 16.86 36.92Q16.82 36.32 16.6 35.79Q16.53 35.61 16.43 35.44Q16.02 34.77 15.49 34.43L16.56 34.38L16.47 32.62L8.48 33.04L8.57 34.79L9.64 34.74C9.32 35 9.05 35.37 8.84 35.84C8.62 36.31 8.52 36.82 8.55 37.36Q8.59 38.14 8.9 38.79Q9.24 39.5 9.91 40.04Q10.42 40.46 11 40.7Q11.87 41.05 12.9 40.99Q13.93 40.94 14.76 40.5Q15.32 40.21 15.79 39.74Q16.39 39.12 16.65 38.39ZM15.06 37.76Q14.9 38.13 14.6 38.44Q14.36 38.67 14.09 38.84Q13.53 39.16 12.81 39.2Q12.09 39.24 11.5 38.97Q11.21 38.84 10.95 38.63Q10.62 38.35 10.42 38Q10.16 37.54 10.13 36.96Q10.1 36.37 10.31 35.89Q10.47 35.52 10.77 35.21Q11.01 34.97 11.29 34.81Q11.84 34.48 12.56 34.44Q13.28 34.4 13.87 34.67Q14.16 34.81 14.42 35.02Q14.75 35.29 14.95 35.64Q15.21 36.1 15.24 36.69Q15.27 37.28 15.06 37.76Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M12.54 27.04L15.95 23.49L15.95 21.17L11.88 25.38L7.95 21.74L7.95 23.89L11.37 27.04L7.95 27.04L7.95 28.8L15.95 28.8L15.95 27.04L12.54 27.04Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M15.93 17.36Q16.23 16.71 16.26 15.93Q16.28 15.32 16.1 14.78Q16.04 14.59 15.96 14.41Q15.61 13.71 15.11 13.32L16.19 13.36L16.25 11.6L8.25 11.32L8.19 13.08L9.26 13.12C8.91 13.35 8.61 13.69 8.36 14.14C8.1 14.59 7.96 15.09 7.94 15.64Q7.91 16.42 8.17 17.09Q8.45 17.82 9.06 18.43Q9.53 18.89 10.1 19.17Q10.93 19.6 11.96 19.63Q13 19.67 13.86 19.31Q14.44 19.06 14.94 18.63Q15.6 18.07 15.93 17.36ZM14.4 16.6Q14.2 16.95 13.87 17.24Q13.62 17.45 13.33 17.59Q12.75 17.87 12.03 17.84Q11.3 17.82 10.75 17.5Q10.46 17.34 10.23 17.11Q9.92 16.8 9.75 16.44Q9.53 15.96 9.55 15.37Q9.57 14.78 9.82 14.32Q10.02 13.97 10.35 13.69Q10.6 13.47 10.89 13.33Q11.47 13.05 12.19 13.08Q12.92 13.1 13.47 13.42Q13.75 13.58 13.99 13.81Q14.3 14.12 14.47 14.48Q14.69 14.96 14.67 15.55Q14.65 16.14 14.4 16.6Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M15.78 6.77Q16.28 5.94 16.35 4.85Q16.46 3.3 15.8 2.39Q15.34 1.74 14.71 1.51Q14.44 1.41 14.14 1.39Q13.52 1.34 13.03 1.58Q12.5 1.85 12.14 2.45Q11.94 2.08 11.63 1.85Q11.19 1.52 10.53 1.47Q10.15 1.44 9.8 1.55Q9.3 1.7 8.88 2.13Q8.15 2.85 8.05 4.27Q7.99 5.25 8.32 6.07Q8.39 6.26 8.5 6.45Q8.66 6.74 8.88 6.97Q9.39 7.5 10.2 7.72L10.33 5.96Q9.96 5.82 9.74 5.55Q9.41 5.13 9.46 4.4Q9.5 3.79 9.8 3.46Q9.91 3.32 10.06 3.24Q10.27 3.14 10.54 3.16Q10.88 3.18 11.09 3.35Q11.18 3.43 11.25 3.53C11.39 3.75 11.45 4.05 11.43 4.42L11.36 5.33L12.66 5.42L12.72 4.48Q12.77 3.81 13.08 3.46C13.28 3.23 13.55 3.13 13.89 3.15C14.22 3.17 14.48 3.32 14.66 3.6C14.85 3.87 14.93 4.25 14.9 4.74Q14.84 5.6 14.38 6.02Q14.13 6.25 13.76 6.35L13.64 8.15Q14.37 8.06 14.92 7.69Q15.29 7.44 15.57 7.07Q15.68 6.92 15.78 6.77Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>
+                    </div>
+
+                    <div class="categories-item-count">
+                        4 <span>шт</span>
+                    </div>
+
+                    <button class="categories-item-button button-circle">
+                        <span>
+                            <svg viewBox="0 0 22 35" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector"
+                                      d="M21 23.66C19.94 23.66 18.35 24.7 17.02 25.75C15.31 27.1 13.81 28.72 12.67 30.57C11.82 31.96 11 33.64 11 35M11 35C11 33.64 10.17 31.96 9.32 30.57C8.17 28.72 6.68 27.1 4.97 25.75C3.64 24.7 2.05 23.66 1 23.66M11 35L11 1"
+                                      stroke="#D9FF5A" stroke-opacity="1.000000" stroke-width="2.000000"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="categories-item">
+                    <span class="categories-item-bg">
+                        <svg viewBox="0 0 388 461.804" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path id="Subtract"
+                                  d="M0 250C0 111.929 86.8564 0 194 0C262.033 0 321.886 45.1279 356.518 113.422C362.796 125.804 357.939 140.332 348.349 150.369C330.108 169.461 321.908 191.971 330.992 211.451C337.984 226.447 355.439 234.708 375.339 236.938C382.227 237.709 388 243.069 388 250C388 334.762 355.266 409.671 305.2 454.881C290.028 468.581 267.536 458.018 256.602 440.747C242.032 417.737 219.628 403 194.5 403C169.191 403 146.645 417.951 132.085 441.246C121.263 458.562 98.8555 469.224 83.625 455.622C33.0938 410.493 0 335.227 0 250Z"
+                                  clip-rule="evenodd" fill="#CBB6FF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+
+
+                    <div class="categories-item-title">
+                        кресла и стулья
+                    </div>
+
+                    <div class="categories-item-image">
+                        <img src="static/images/category-3.png" alt="">
+                    </div>
+
+                    <div class="categories-item-additional">
+                        <svg viewBox="0 0 93.9355 198.149" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M88.65 188.3L87.41 187.34L80.92 189.03L84.2 184.83L82.81 183.74L77.88 190.05L79.12 191.01L85.61 189.33L82.33 193.53L83.72 194.61L88.65 188.3Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M78.68 180.52Q78.35 179.61 77.55 178.86Q76.42 177.81 75.29 177.74Q74.5 177.7 73.92 178.04Q73.68 178.19 73.47 178.41Q73.05 178.87 72.93 179.39Q72.8 179.97 73.04 180.63Q72.63 180.56 72.25 180.65Q71.71 180.78 71.26 181.27Q71 181.55 70.87 181.88Q70.67 182.37 70.73 182.96Q70.84 183.98 71.88 184.95Q72.6 185.62 73.44 185.88Q73.64 185.94 73.85 185.98Q74.18 186.04 74.5 186.01Q75.23 185.95 75.91 185.45L74.63 184.25Q74.28 184.45 73.94 184.45Q73.4 184.44 72.86 183.94Q72.42 183.53 72.35 183.09Q72.31 182.91 72.35 182.74Q72.4 182.52 72.58 182.32Q72.81 182.07 73.08 182.02Q73.19 181.99 73.31 182C73.58 182.03 73.85 182.17 74.12 182.43L74.79 183.05L75.67 182.1L74.98 181.46Q74.49 181 74.42 180.54C74.36 180.24 74.45 179.96 74.68 179.71C74.91 179.47 75.19 179.37 75.52 179.4C75.85 179.43 76.19 179.6 76.56 179.93Q77.19 180.52 77.22 181.14Q77.24 181.48 77.09 181.82L78.41 183.06Q78.8 182.43 78.86 181.77Q78.9 181.32 78.79 180.87Q78.74 180.69 78.68 180.52Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M67.18 179.8L72.94 174.24L71.71 172.98L67.09 177.44L64.66 174.94L63.53 176.02L67.18 179.8Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M63.61 164.66Q62.99 164.4 62.27 164.35Q61.46 164.29 60.73 164.52Q59.93 164.77 59.24 165.37Q58.54 165.98 58.18 166.75Q57.87 167.43 57.82 168.22Q57.76 168.96 57.95 169.63Q58.19 170.51 58.85 171.26Q59.5 172.01 60.31 172.38Q60.97 172.67 61.73 172.72Q62.5 172.78 63.19 172.57Q64.02 172.32 64.74 171.7Q65.45 171.08 65.81 170.31Q66.13 169.64 66.19 168.85Q66.24 168.11 66.04 167.44Q65.79 166.57 65.13 165.8Q64.46 165.03 63.61 164.66ZM63 166.21Q63.5 166.42 63.9 166.88Q64.31 167.35 64.45 167.89Q64.54 168.26 64.5 168.66Q64.46 169.02 64.33 169.34Q64.09 169.91 63.58 170.36Q63.05 170.82 62.44 170.96Q62.12 171.04 61.78 171.03Q61.35 171.01 60.98 170.86Q60.48 170.65 60.08 170.19Q59.7 169.75 59.57 169.24Q59.47 168.85 59.52 168.42Q59.55 168.05 59.68 167.73Q59.91 167.17 60.42 166.72Q60.91 166.29 61.49 166.14Q61.84 166.04 62.23 166.06Q62.64 166.07 63 166.21Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M54.82 163.85L59.89 159.89L58.81 158.5L53.74 162.46L52.19 160.48L50.96 161.44L55.07 166.7L56.3 165.74L54.82 163.85Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M51.88 149.15Q51.29 148.82 50.58 148.7Q49.77 148.55 49.03 148.71Q48.21 148.87 47.46 149.4Q46.69 149.93 46.26 150.66Q45.88 151.3 45.74 152.08Q45.61 152.81 45.73 153.5Q45.88 154.39 46.45 155.22Q47.02 156.03 47.79 156.48Q48.41 156.84 49.17 156.97Q49.92 157.1 50.63 156.97Q51.49 156.81 52.27 156.27Q53.03 155.73 53.48 155Q53.86 154.37 54 153.58Q54.13 152.86 54.01 152.17Q53.85 151.27 53.27 150.45Q52.68 149.61 51.88 149.15ZM51.1 150.63Q51.58 150.88 51.93 151.38Q52.29 151.89 52.37 152.45Q52.42 152.83 52.34 153.22Q52.26 153.58 52.1 153.88Q51.81 154.42 51.25 154.81Q50.67 155.21 50.05 155.29Q49.73 155.34 49.39 155.29Q48.97 155.23 48.62 155.04Q48.14 154.78 47.79 154.28Q47.45 153.8 47.38 153.28Q47.32 152.88 47.41 152.46Q47.48 152.1 47.65 151.79Q47.93 151.25 48.49 150.87Q49.02 150.49 49.61 150.39Q49.98 150.34 50.36 150.39Q50.77 150.45 51.1 150.63Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M42.86 149.24L49.71 145.12L47.6 141.59Q46.85 140.35 45.9 140.08Q45.44 139.95 45 140Q44.52 140.06 44.07 140.33Q43.58 140.63 43.33 141.07Q43.02 141.59 43.06 142.31Q42.56 142.16 42.1 142.25Q41.77 142.31 41.47 142.49Q41.07 142.74 40.81 143.09Q40.55 143.47 40.45 143.96Q40.27 144.93 40.98 146.11L42.86 149.24ZM43.71 144.39L44.72 146.07L43.17 147L42.16 145.32Q41.87 144.83 41.98 144.46Q42.07 144.19 42.41 143.99C42.68 143.82 42.93 143.79 43.17 143.88C43.38 143.98 43.57 144.15 43.71 144.39ZM46.33 142.37L47.53 144.38L45.82 145.41L44.61 143.41Q44.36 142.97 44.41 142.59Q44.42 142.57 44.42 142.55C44.46 142.28 44.61 142.06 44.88 141.9C45.15 141.74 45.42 141.7 45.68 141.79C45.93 141.88 46.15 142.07 46.33 142.37Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M44.52 136.34C44.47 136.16 44.36 135.89 44.17 135.55Q43.88 134.99 43.42 134.67Q43.12 134.47 42.75 134.37C42.12 134.18 41.4 134.3 40.6 134.73L37.25 136.51L35.85 133.87L41.53 130.85L40.7 129.29L33.64 133.05L36.7 138.8L41.19 136.41Q41.92 136.02 42.33 136.07C42.6 136.11 42.81 136.28 42.96 136.57Q43.04 136.73 43.18 137.05L44.52 136.34Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M37.46 125.9Q37.52 124.89 37.03 123.84Q36.51 122.71 35.62 122.09Q35.46 121.98 35.29 121.88Q34.6 121.49 33.87 121.41Q33.42 121.35 32.95 121.42L33.73 123.08Q34.17 123.09 34.54 123.26Q35.2 123.58 35.6 124.44Q35.92 125.12 35.86 125.77Q35.83 126.02 35.76 126.25Q35.62 126.67 35.36 126.98Q35.08 127.33 34.65 127.55L31.96 121.77C30.7 122.27 29.85 123.03 29.39 124.08Q29.12 124.7 29.08 125.33Q29.01 126.32 29.48 127.34Q30.02 128.48 30.91 129.09Q31.32 129.37 31.82 129.54Q32.31 129.71 32.81 129.75Q33.88 129.83 34.99 129.31Q36.07 128.81 36.69 127.97Q37.02 127.53 37.22 127Q37.42 126.46 37.46 125.9ZM31.5 127.63Q31.09 127.3 30.84 126.76Q30.65 126.36 30.63 125.95Q30.61 125.64 30.69 125.31Q30.7 125.27 30.71 125.23Q30.91 124.55 31.62 124.01L33.5 128.03C32.9 128.18 32.38 128.13 31.92 127.9Q31.69 127.79 31.5 127.63Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M27.26 119.63L34.68 116.63L34.02 115L30.99 116.22L29.55 112.65L32.57 111.42L31.91 109.79L24.49 112.79L25.15 114.42L28.09 113.23L29.54 116.81L26.6 118L27.26 119.63Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M29.94 106.17L29.43 104.68L23.06 102.56L28.1 100.83L27.53 99.16L19.97 101.77L20.48 103.25L26.84 105.37L21.8 107.11L22.38 108.77L29.94 106.17Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M25.45 93.38Q25.68 92.39 25.36 91.27Q25.02 90.08 24.24 89.32Q24.1 89.19 23.94 89.06Q23.32 88.58 22.61 88.38Q22.18 88.25 21.71 88.24L22.22 90.01Q22.65 90.09 22.98 90.31Q23.59 90.72 23.85 91.64Q24.06 92.37 23.89 93Q23.83 93.23 23.72 93.46Q23.52 93.85 23.22 94.12Q22.88 94.41 22.42 94.56L20.67 88.44C19.35 88.73 18.39 89.35 17.78 90.32Q17.41 90.89 17.27 91.5Q17.05 92.47 17.36 93.55Q17.7 94.76 18.49 95.5Q18.85 95.84 19.31 96.08Q19.77 96.33 20.26 96.45Q21.31 96.7 22.49 96.36Q23.63 96.03 24.38 95.3Q24.77 94.92 25.05 94.42Q25.33 93.92 25.45 93.38ZM19.3 94.15Q18.95 93.76 18.78 93.19Q18.66 92.77 18.7 92.36Q18.74 92.04 18.87 91.74Q18.88 91.7 18.9 91.66Q19.2 91.01 19.99 90.6L21.21 94.86C20.6 94.91 20.09 94.79 19.67 94.48Q19.47 94.34 19.3 94.15Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ" d="" fill="#FFFFFF" fill-opacity="1.000000"
+                                  fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M14.63 81.13L22.45 79.46L22.09 77.74L18.89 78.42L18.09 74.65L21.28 73.97L20.92 72.25L13.09 73.91L13.46 75.63L16.56 74.98L17.36 78.75L14.26 79.41L14.63 81.13Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M19.22 66.25Q19.39 65.55 19.27 64.77Q19.17 64.17 18.89 63.67Q18.8 63.5 18.68 63.34Q18.21 62.72 17.65 62.44L18.71 62.27L18.43 60.53L10.53 61.78L10.81 63.52L11.86 63.35C11.57 63.65 11.34 64.04 11.18 64.53C11.01 65.02 10.96 65.54 11.05 66.08Q11.17 66.85 11.55 67.46Q11.96 68.13 12.68 68.6Q13.23 68.97 13.84 69.14Q14.74 69.39 15.76 69.23Q16.78 69.07 17.56 68.55Q18.08 68.2 18.5 67.68Q19.03 67.01 19.22 66.25ZM17.57 65.79Q17.45 66.18 17.18 66.51Q16.97 66.77 16.71 66.97Q16.19 67.35 15.48 67.46Q14.76 67.58 14.16 67.37Q13.85 67.27 13.57 67.08Q13.21 66.85 12.98 66.52Q12.67 66.09 12.58 65.51Q12.49 64.93 12.65 64.43Q12.77 64.04 13.04 63.7Q13.25 63.44 13.5 63.25Q14.02 62.87 14.73 62.75Q15.45 62.64 16.06 62.85Q16.36 62.95 16.64 63.13Q17 63.37 17.24 63.7Q17.54 64.13 17.64 64.71Q17.73 65.29 17.57 65.79Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ" d="" fill="#FFFFFF" fill-opacity="1.000000"
+                                  fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M17.45 50.03Q17.81 49.13 17.72 48.04Q17.58 46.5 16.79 45.7Q16.22 45.13 15.57 45Q15.29 44.95 14.99 44.97Q14.37 45.03 13.93 45.34Q13.45 45.68 13.18 46.34Q12.92 46 12.59 45.83Q12.09 45.56 11.43 45.62Q11.05 45.66 10.73 45.81Q10.26 46.04 9.91 46.53Q9.31 47.35 9.43 48.77Q9.51 49.75 9.97 50.51Q10.08 50.69 10.21 50.85Q10.41 51.12 10.67 51.31Q11.25 51.75 12.09 51.84L11.94 50.09Q11.55 50.01 11.3 49.78Q10.9 49.41 10.83 48.68Q10.78 48.07 11.02 47.7Q11.12 47.54 11.25 47.44Q11.44 47.31 11.71 47.28Q12.05 47.26 12.29 47.39Q12.39 47.45 12.47 47.54C12.65 47.74 12.75 48.02 12.79 48.4L12.86 49.3L14.16 49.19L14.07 48.25Q14.02 47.58 14.27 47.19C14.43 46.93 14.68 46.78 15.02 46.75C15.35 46.73 15.63 46.83 15.85 47.08C16.07 47.32 16.21 47.68 16.27 48.17Q16.34 49.03 15.95 49.51Q15.74 49.78 15.39 49.93L15.55 51.73Q16.26 51.53 16.75 51.08Q17.07 50.77 17.29 50.36Q17.38 50.2 17.45 50.03Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M16.65 38.39Q16.9 37.71 16.86 36.92Q16.82 36.32 16.6 35.79Q16.53 35.61 16.43 35.44Q16.02 34.77 15.49 34.43L16.56 34.38L16.47 32.62L8.48 33.04L8.57 34.79L9.64 34.74C9.32 35 9.05 35.37 8.84 35.84C8.62 36.31 8.52 36.82 8.55 37.36Q8.59 38.14 8.9 38.79Q9.24 39.5 9.91 40.04Q10.42 40.46 11 40.7Q11.87 41.05 12.9 40.99Q13.93 40.94 14.76 40.5Q15.32 40.21 15.79 39.74Q16.39 39.12 16.65 38.39ZM15.06 37.76Q14.9 38.13 14.6 38.44Q14.36 38.67 14.09 38.84Q13.53 39.16 12.81 39.2Q12.09 39.24 11.5 38.97Q11.21 38.84 10.95 38.63Q10.62 38.35 10.42 38Q10.16 37.54 10.13 36.96Q10.1 36.37 10.31 35.89Q10.47 35.52 10.77 35.21Q11.01 34.97 11.29 34.81Q11.84 34.48 12.56 34.44Q13.28 34.4 13.87 34.67Q14.16 34.81 14.42 35.02Q14.75 35.29 14.95 35.64Q15.21 36.1 15.24 36.69Q15.27 37.28 15.06 37.76Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M12.54 27.04L15.95 23.49L15.95 21.17L11.88 25.38L7.95 21.74L7.95 23.89L11.37 27.04L7.95 27.04L7.95 28.8L15.95 28.8L15.95 27.04L12.54 27.04Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M15.93 17.36Q16.23 16.71 16.26 15.93Q16.28 15.32 16.1 14.78Q16.04 14.59 15.96 14.41Q15.61 13.71 15.11 13.32L16.19 13.36L16.25 11.6L8.25 11.32L8.19 13.08L9.26 13.12C8.91 13.35 8.61 13.69 8.36 14.14C8.1 14.59 7.96 15.09 7.94 15.64Q7.91 16.42 8.17 17.09Q8.45 17.82 9.06 18.43Q9.53 18.89 10.1 19.17Q10.93 19.6 11.96 19.63Q13 19.67 13.86 19.31Q14.44 19.06 14.94 18.63Q15.6 18.07 15.93 17.36ZM14.4 16.6Q14.2 16.95 13.87 17.24Q13.62 17.45 13.33 17.59Q12.75 17.87 12.03 17.84Q11.3 17.82 10.75 17.5Q10.46 17.34 10.23 17.11Q9.92 16.8 9.75 16.44Q9.53 15.96 9.55 15.37Q9.57 14.78 9.82 14.32Q10.02 13.97 10.35 13.69Q10.6 13.47 10.89 13.33Q11.47 13.05 12.19 13.08Q12.92 13.1 13.47 13.42Q13.75 13.58 13.99 13.81Q14.3 14.12 14.47 14.48Q14.69 14.96 14.67 15.55Q14.65 16.14 14.4 16.6Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M15.78 6.77Q16.28 5.94 16.35 4.85Q16.46 3.3 15.8 2.39Q15.34 1.74 14.71 1.51Q14.44 1.41 14.14 1.39Q13.52 1.34 13.03 1.58Q12.5 1.85 12.14 2.45Q11.94 2.08 11.63 1.85Q11.19 1.52 10.53 1.47Q10.15 1.44 9.8 1.55Q9.3 1.7 8.88 2.13Q8.15 2.85 8.05 4.27Q7.99 5.25 8.32 6.07Q8.39 6.26 8.5 6.45Q8.66 6.74 8.88 6.97Q9.39 7.5 10.2 7.72L10.33 5.96Q9.96 5.82 9.74 5.55Q9.41 5.13 9.46 4.4Q9.5 3.79 9.8 3.46Q9.91 3.32 10.06 3.24Q10.27 3.14 10.54 3.16Q10.88 3.18 11.09 3.35Q11.18 3.43 11.25 3.53C11.39 3.75 11.45 4.05 11.43 4.42L11.36 5.33L12.66 5.42L12.72 4.48Q12.77 3.81 13.08 3.46C13.28 3.23 13.55 3.13 13.89 3.15C14.22 3.17 14.48 3.32 14.66 3.6C14.85 3.87 14.93 4.25 14.9 4.74Q14.84 5.6 14.38 6.02Q14.13 6.25 13.76 6.35L13.64 8.15Q14.37 8.06 14.92 7.69Q15.29 7.44 15.57 7.07Q15.68 6.92 15.78 6.77Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>
+                    </div>
+
+                    <div class="categories-item-count">
+                        4 <span>шт</span>
+                    </div>
+
+                    <button class="categories-item-button button-circle">
+                        <span>
+                            <svg viewBox="0 0 22 35" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector"
+                                      d="M21 23.66C19.94 23.66 18.35 24.7 17.02 25.75C15.31 27.1 13.81 28.72 12.67 30.57C11.82 31.96 11 33.64 11 35M11 35C11 33.64 10.17 31.96 9.32 30.57C8.17 28.72 6.68 27.1 4.97 25.75C3.64 24.7 2.05 23.66 1 23.66M11 35L11 1"
+                                      stroke="#D9FF5A" stroke-opacity="1.000000" stroke-width="2.000000"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="categories-item">
+                    <span class="categories-item-bg">
+                        <svg viewBox="0 0 388 461.804" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path id="Subtract"
+                                  d="M0 250C0 111.929 86.8564 0 194 0C262.033 0 321.886 45.1279 356.518 113.422C362.796 125.804 357.939 140.332 348.349 150.369C330.108 169.461 321.908 191.971 330.992 211.451C337.984 226.447 355.439 234.708 375.339 236.938C382.227 237.709 388 243.069 388 250C388 334.762 355.266 409.671 305.2 454.881C290.028 468.581 267.536 458.018 256.602 440.747C242.032 417.737 219.628 403 194.5 403C169.191 403 146.645 417.951 132.085 441.246C121.263 458.562 98.8555 469.224 83.625 455.622C33.0938 410.493 0 335.227 0 250Z"
+                                  clip-rule="evenodd" fill="#CBB6FF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+
+
+                    <div class="categories-item-title">
+                        столы и тумбы
+                    </div>
+
+                    <div class="categories-item-image">
+                        <img src="static/images/category-4.png" alt="">
+                    </div>
+
+                    <div class="categories-item-additional">
+                        <svg viewBox="0 0 93.9355 198.149" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M88.65 188.3L87.41 187.34L80.92 189.03L84.2 184.83L82.81 183.74L77.88 190.05L79.12 191.01L85.61 189.33L82.33 193.53L83.72 194.61L88.65 188.3Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M78.68 180.52Q78.35 179.61 77.55 178.86Q76.42 177.81 75.29 177.74Q74.5 177.7 73.92 178.04Q73.68 178.19 73.47 178.41Q73.05 178.87 72.93 179.39Q72.8 179.97 73.04 180.63Q72.63 180.56 72.25 180.65Q71.71 180.78 71.26 181.27Q71 181.55 70.87 181.88Q70.67 182.37 70.73 182.96Q70.84 183.98 71.88 184.95Q72.6 185.62 73.44 185.88Q73.64 185.94 73.85 185.98Q74.18 186.04 74.5 186.01Q75.23 185.95 75.91 185.45L74.63 184.25Q74.28 184.45 73.94 184.45Q73.4 184.44 72.86 183.94Q72.42 183.53 72.35 183.09Q72.31 182.91 72.35 182.74Q72.4 182.52 72.58 182.32Q72.81 182.07 73.08 182.02Q73.19 181.99 73.31 182C73.58 182.03 73.85 182.17 74.12 182.43L74.79 183.05L75.67 182.1L74.98 181.46Q74.49 181 74.42 180.54C74.36 180.24 74.45 179.96 74.68 179.71C74.91 179.47 75.19 179.37 75.52 179.4C75.85 179.43 76.19 179.6 76.56 179.93Q77.19 180.52 77.22 181.14Q77.24 181.48 77.09 181.82L78.41 183.06Q78.8 182.43 78.86 181.77Q78.9 181.32 78.79 180.87Q78.74 180.69 78.68 180.52Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M67.18 179.8L72.94 174.24L71.71 172.98L67.09 177.44L64.66 174.94L63.53 176.02L67.18 179.8Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M63.61 164.66Q62.99 164.4 62.27 164.35Q61.46 164.29 60.73 164.52Q59.93 164.77 59.24 165.37Q58.54 165.98 58.18 166.75Q57.87 167.43 57.82 168.22Q57.76 168.96 57.95 169.63Q58.19 170.51 58.85 171.26Q59.5 172.01 60.31 172.38Q60.97 172.67 61.73 172.72Q62.5 172.78 63.19 172.57Q64.02 172.32 64.74 171.7Q65.45 171.08 65.81 170.31Q66.13 169.64 66.19 168.85Q66.24 168.11 66.04 167.44Q65.79 166.57 65.13 165.8Q64.46 165.03 63.61 164.66ZM63 166.21Q63.5 166.42 63.9 166.88Q64.31 167.35 64.45 167.89Q64.54 168.26 64.5 168.66Q64.46 169.02 64.33 169.34Q64.09 169.91 63.58 170.36Q63.05 170.82 62.44 170.96Q62.12 171.04 61.78 171.03Q61.35 171.01 60.98 170.86Q60.48 170.65 60.08 170.19Q59.7 169.75 59.57 169.24Q59.47 168.85 59.52 168.42Q59.55 168.05 59.68 167.73Q59.91 167.17 60.42 166.72Q60.91 166.29 61.49 166.14Q61.84 166.04 62.23 166.06Q62.64 166.07 63 166.21Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M54.82 163.85L59.89 159.89L58.81 158.5L53.74 162.46L52.19 160.48L50.96 161.44L55.07 166.7L56.3 165.74L54.82 163.85Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M51.88 149.15Q51.29 148.82 50.58 148.7Q49.77 148.55 49.03 148.71Q48.21 148.87 47.46 149.4Q46.69 149.93 46.26 150.66Q45.88 151.3 45.74 152.08Q45.61 152.81 45.73 153.5Q45.88 154.39 46.45 155.22Q47.02 156.03 47.79 156.48Q48.41 156.84 49.17 156.97Q49.92 157.1 50.63 156.97Q51.49 156.81 52.27 156.27Q53.03 155.73 53.48 155Q53.86 154.37 54 153.58Q54.13 152.86 54.01 152.17Q53.85 151.27 53.27 150.45Q52.68 149.61 51.88 149.15ZM51.1 150.63Q51.58 150.88 51.93 151.38Q52.29 151.89 52.37 152.45Q52.42 152.83 52.34 153.22Q52.26 153.58 52.1 153.88Q51.81 154.42 51.25 154.81Q50.67 155.21 50.05 155.29Q49.73 155.34 49.39 155.29Q48.97 155.23 48.62 155.04Q48.14 154.78 47.79 154.28Q47.45 153.8 47.38 153.28Q47.32 152.88 47.41 152.46Q47.48 152.1 47.65 151.79Q47.93 151.25 48.49 150.87Q49.02 150.49 49.61 150.39Q49.98 150.34 50.36 150.39Q50.77 150.45 51.1 150.63Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M42.86 149.24L49.71 145.12L47.6 141.59Q46.85 140.35 45.9 140.08Q45.44 139.95 45 140Q44.52 140.06 44.07 140.33Q43.58 140.63 43.33 141.07Q43.02 141.59 43.06 142.31Q42.56 142.16 42.1 142.25Q41.77 142.31 41.47 142.49Q41.07 142.74 40.81 143.09Q40.55 143.47 40.45 143.96Q40.27 144.93 40.98 146.11L42.86 149.24ZM43.71 144.39L44.72 146.07L43.17 147L42.16 145.32Q41.87 144.83 41.98 144.46Q42.07 144.19 42.41 143.99C42.68 143.82 42.93 143.79 43.17 143.88C43.38 143.98 43.57 144.15 43.71 144.39ZM46.33 142.37L47.53 144.38L45.82 145.41L44.61 143.41Q44.36 142.97 44.41 142.59Q44.42 142.57 44.42 142.55C44.46 142.28 44.61 142.06 44.88 141.9C45.15 141.74 45.42 141.7 45.68 141.79C45.93 141.88 46.15 142.07 46.33 142.37Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M44.52 136.34C44.47 136.16 44.36 135.89 44.17 135.55Q43.88 134.99 43.42 134.67Q43.12 134.47 42.75 134.37C42.12 134.18 41.4 134.3 40.6 134.73L37.25 136.51L35.85 133.87L41.53 130.85L40.7 129.29L33.64 133.05L36.7 138.8L41.19 136.41Q41.92 136.02 42.33 136.07C42.6 136.11 42.81 136.28 42.96 136.57Q43.04 136.73 43.18 137.05L44.52 136.34Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M37.46 125.9Q37.52 124.89 37.03 123.84Q36.51 122.71 35.62 122.09Q35.46 121.98 35.29 121.88Q34.6 121.49 33.87 121.41Q33.42 121.35 32.95 121.42L33.73 123.08Q34.17 123.09 34.54 123.26Q35.2 123.58 35.6 124.44Q35.92 125.12 35.86 125.77Q35.83 126.02 35.76 126.25Q35.62 126.67 35.36 126.98Q35.08 127.33 34.65 127.55L31.96 121.77C30.7 122.27 29.85 123.03 29.39 124.08Q29.12 124.7 29.08 125.33Q29.01 126.32 29.48 127.34Q30.02 128.48 30.91 129.09Q31.32 129.37 31.82 129.54Q32.31 129.71 32.81 129.75Q33.88 129.83 34.99 129.31Q36.07 128.81 36.69 127.97Q37.02 127.53 37.22 127Q37.42 126.46 37.46 125.9ZM31.5 127.63Q31.09 127.3 30.84 126.76Q30.65 126.36 30.63 125.95Q30.61 125.64 30.69 125.31Q30.7 125.27 30.71 125.23Q30.91 124.55 31.62 124.01L33.5 128.03C32.9 128.18 32.38 128.13 31.92 127.9Q31.69 127.79 31.5 127.63Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M27.26 119.63L34.68 116.63L34.02 115L30.99 116.22L29.55 112.65L32.57 111.42L31.91 109.79L24.49 112.79L25.15 114.42L28.09 113.23L29.54 116.81L26.6 118L27.26 119.63Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M29.94 106.17L29.43 104.68L23.06 102.56L28.1 100.83L27.53 99.16L19.97 101.77L20.48 103.25L26.84 105.37L21.8 107.11L22.38 108.77L29.94 106.17Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M25.45 93.38Q25.68 92.39 25.36 91.27Q25.02 90.08 24.24 89.32Q24.1 89.19 23.94 89.06Q23.32 88.58 22.61 88.38Q22.18 88.25 21.71 88.24L22.22 90.01Q22.65 90.09 22.98 90.31Q23.59 90.72 23.85 91.64Q24.06 92.37 23.89 93Q23.83 93.23 23.72 93.46Q23.52 93.85 23.22 94.12Q22.88 94.41 22.42 94.56L20.67 88.44C19.35 88.73 18.39 89.35 17.78 90.32Q17.41 90.89 17.27 91.5Q17.05 92.47 17.36 93.55Q17.7 94.76 18.49 95.5Q18.85 95.84 19.31 96.08Q19.77 96.33 20.26 96.45Q21.31 96.7 22.49 96.36Q23.63 96.03 24.38 95.3Q24.77 94.92 25.05 94.42Q25.33 93.92 25.45 93.38ZM19.3 94.15Q18.95 93.76 18.78 93.19Q18.66 92.77 18.7 92.36Q18.74 92.04 18.87 91.74Q18.88 91.7 18.9 91.66Q19.2 91.01 19.99 90.6L21.21 94.86C20.6 94.91 20.09 94.79 19.67 94.48Q19.47 94.34 19.3 94.15Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ" d="" fill="#FFFFFF" fill-opacity="1.000000"
+                                  fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M14.63 81.13L22.45 79.46L22.09 77.74L18.89 78.42L18.09 74.65L21.28 73.97L20.92 72.25L13.09 73.91L13.46 75.63L16.56 74.98L17.36 78.75L14.26 79.41L14.63 81.13Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M19.22 66.25Q19.39 65.55 19.27 64.77Q19.17 64.17 18.89 63.67Q18.8 63.5 18.68 63.34Q18.21 62.72 17.65 62.44L18.71 62.27L18.43 60.53L10.53 61.78L10.81 63.52L11.86 63.35C11.57 63.65 11.34 64.04 11.18 64.53C11.01 65.02 10.96 65.54 11.05 66.08Q11.17 66.85 11.55 67.46Q11.96 68.13 12.68 68.6Q13.23 68.97 13.84 69.14Q14.74 69.39 15.76 69.23Q16.78 69.07 17.56 68.55Q18.08 68.2 18.5 67.68Q19.03 67.01 19.22 66.25ZM17.57 65.79Q17.45 66.18 17.18 66.51Q16.97 66.77 16.71 66.97Q16.19 67.35 15.48 67.46Q14.76 67.58 14.16 67.37Q13.85 67.27 13.57 67.08Q13.21 66.85 12.98 66.52Q12.67 66.09 12.58 65.51Q12.49 64.93 12.65 64.43Q12.77 64.04 13.04 63.7Q13.25 63.44 13.5 63.25Q14.02 62.87 14.73 62.75Q15.45 62.64 16.06 62.85Q16.36 62.95 16.64 63.13Q17 63.37 17.24 63.7Q17.54 64.13 17.64 64.71Q17.73 65.29 17.57 65.79Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ" d="" fill="#FFFFFF" fill-opacity="1.000000"
+                                  fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M17.45 50.03Q17.81 49.13 17.72 48.04Q17.58 46.5 16.79 45.7Q16.22 45.13 15.57 45Q15.29 44.95 14.99 44.97Q14.37 45.03 13.93 45.34Q13.45 45.68 13.18 46.34Q12.92 46 12.59 45.83Q12.09 45.56 11.43 45.62Q11.05 45.66 10.73 45.81Q10.26 46.04 9.91 46.53Q9.31 47.35 9.43 48.77Q9.51 49.75 9.97 50.51Q10.08 50.69 10.21 50.85Q10.41 51.12 10.67 51.31Q11.25 51.75 12.09 51.84L11.94 50.09Q11.55 50.01 11.3 49.78Q10.9 49.41 10.83 48.68Q10.78 48.07 11.02 47.7Q11.12 47.54 11.25 47.44Q11.44 47.31 11.71 47.28Q12.05 47.26 12.29 47.39Q12.39 47.45 12.47 47.54C12.65 47.74 12.75 48.02 12.79 48.4L12.86 49.3L14.16 49.19L14.07 48.25Q14.02 47.58 14.27 47.19C14.43 46.93 14.68 46.78 15.02 46.75C15.35 46.73 15.63 46.83 15.85 47.08C16.07 47.32 16.21 47.68 16.27 48.17Q16.34 49.03 15.95 49.51Q15.74 49.78 15.39 49.93L15.55 51.73Q16.26 51.53 16.75 51.08Q17.07 50.77 17.29 50.36Q17.38 50.2 17.45 50.03Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M16.65 38.39Q16.9 37.71 16.86 36.92Q16.82 36.32 16.6 35.79Q16.53 35.61 16.43 35.44Q16.02 34.77 15.49 34.43L16.56 34.38L16.47 32.62L8.48 33.04L8.57 34.79L9.64 34.74C9.32 35 9.05 35.37 8.84 35.84C8.62 36.31 8.52 36.82 8.55 37.36Q8.59 38.14 8.9 38.79Q9.24 39.5 9.91 40.04Q10.42 40.46 11 40.7Q11.87 41.05 12.9 40.99Q13.93 40.94 14.76 40.5Q15.32 40.21 15.79 39.74Q16.39 39.12 16.65 38.39ZM15.06 37.76Q14.9 38.13 14.6 38.44Q14.36 38.67 14.09 38.84Q13.53 39.16 12.81 39.2Q12.09 39.24 11.5 38.97Q11.21 38.84 10.95 38.63Q10.62 38.35 10.42 38Q10.16 37.54 10.13 36.96Q10.1 36.37 10.31 35.89Q10.47 35.52 10.77 35.21Q11.01 34.97 11.29 34.81Q11.84 34.48 12.56 34.44Q13.28 34.4 13.87 34.67Q14.16 34.81 14.42 35.02Q14.75 35.29 14.95 35.64Q15.21 36.1 15.24 36.69Q15.27 37.28 15.06 37.76Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M12.54 27.04L15.95 23.49L15.95 21.17L11.88 25.38L7.95 21.74L7.95 23.89L11.37 27.04L7.95 27.04L7.95 28.8L15.95 28.8L15.95 27.04L12.54 27.04Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M15.93 17.36Q16.23 16.71 16.26 15.93Q16.28 15.32 16.1 14.78Q16.04 14.59 15.96 14.41Q15.61 13.71 15.11 13.32L16.19 13.36L16.25 11.6L8.25 11.32L8.19 13.08L9.26 13.12C8.91 13.35 8.61 13.69 8.36 14.14C8.1 14.59 7.96 15.09 7.94 15.64Q7.91 16.42 8.17 17.09Q8.45 17.82 9.06 18.43Q9.53 18.89 10.1 19.17Q10.93 19.6 11.96 19.63Q13 19.67 13.86 19.31Q14.44 19.06 14.94 18.63Q15.6 18.07 15.93 17.36ZM14.4 16.6Q14.2 16.95 13.87 17.24Q13.62 17.45 13.33 17.59Q12.75 17.87 12.03 17.84Q11.3 17.82 10.75 17.5Q10.46 17.34 10.23 17.11Q9.92 16.8 9.75 16.44Q9.53 15.96 9.55 15.37Q9.57 14.78 9.82 14.32Q10.02 13.97 10.35 13.69Q10.6 13.47 10.89 13.33Q11.47 13.05 12.19 13.08Q12.92 13.1 13.47 13.42Q13.75 13.58 13.99 13.81Q14.3 14.12 14.47 14.48Q14.69 14.96 14.67 15.55Q14.65 16.14 14.4 16.6Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            <path id="[Copy] изготовление на заказ"
+                                  d="M15.78 6.77Q16.28 5.94 16.35 4.85Q16.46 3.3 15.8 2.39Q15.34 1.74 14.71 1.51Q14.44 1.41 14.14 1.39Q13.52 1.34 13.03 1.58Q12.5 1.85 12.14 2.45Q11.94 2.08 11.63 1.85Q11.19 1.52 10.53 1.47Q10.15 1.44 9.8 1.55Q9.3 1.7 8.88 2.13Q8.15 2.85 8.05 4.27Q7.99 5.25 8.32 6.07Q8.39 6.26 8.5 6.45Q8.66 6.74 8.88 6.97Q9.39 7.5 10.2 7.72L10.33 5.96Q9.96 5.82 9.74 5.55Q9.41 5.13 9.46 4.4Q9.5 3.79 9.8 3.46Q9.91 3.32 10.06 3.24Q10.27 3.14 10.54 3.16Q10.88 3.18 11.09 3.35Q11.18 3.43 11.25 3.53C11.39 3.75 11.45 4.05 11.43 4.42L11.36 5.33L12.66 5.42L12.72 4.48Q12.77 3.81 13.08 3.46C13.28 3.23 13.55 3.13 13.89 3.15C14.22 3.17 14.48 3.32 14.66 3.6C14.85 3.87 14.93 4.25 14.9 4.74Q14.84 5.6 14.38 6.02Q14.13 6.25 13.76 6.35L13.64 8.15Q14.37 8.06 14.92 7.69Q15.29 7.44 15.57 7.07Q15.68 6.92 15.78 6.77Z"
+                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>
+                    </div>
+
+                    <div class="categories-item-count">
+                        4 <span>шт</span>
+                    </div>
+
+                    <button class="categories-item-button button-circle">
+                        <span>
+                            <svg viewBox="0 0 22 35" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector"
+                                      d="M21 23.66C19.94 23.66 18.35 24.7 17.02 25.75C15.31 27.1 13.81 28.72 12.67 30.57C11.82 31.96 11 33.64 11 35M11 35C11 33.64 10.17 31.96 9.32 30.57C8.17 28.72 6.68 27.1 4.97 25.75C3.64 24.7 2.05 23.66 1 23.66M11 35L11 1"
+                                      stroke="#D9FF5A" stroke-opacity="1.000000" stroke-width="2.000000"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="categories-strips-image">
+            <img src="static/images/strips.png" alt="">
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="container">
+            <div class="blog-header">
+                <div class="blog-header-left">
+                    <div class="swiper-pagination"></div>
+
+                    <div class="blog-header-title">
+                        Блог
+                    </div>
+                </div>
+
+                <div class="blog-header-right">
+                    <span class="blog-header-count">
+                        02
+                    </span>
+
+                    <span class="blog-header-strip"></span>
+
+                    <span class="blog-header-count">
+                        04
+                    </span>
+                </div>
+            </div>
+
+            <div class="blog-slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper blog-slider-items">
+                        <div class="swiper-slide blog-slider-item">
+                            <div class="blog-slider-item-common">
+                                <div class="blog-slider-item-common-bg">
+                                    <svg viewBox="0 0 580 342" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter_2460_1478_dd)">
+                                            <path id="форма"
+                                                  d="M337 0L540 0C562.092 0 580 17.9087 580 40L580 302C580 324.091 562.092 342 540 342L337 342C314.908 342 297 324.091 297 302L297 266C297 262.134 293.866 259 290 259C286.134 259 283 262.134 283 266L283 302C283 318.785 272.662 333.155 258.006 339.09C251.431 341.752 245.062 336.582 242.59 329.934C232.606 303.091 207.965 284 179.5 284C150.891 284 126.858 303.285 117.975 330.342C115.82 336.903 110.089 342 103.184 342L40 342C17.9082 342 0 324.091 0 302L0 40C0 17.9087 17.9082 0 40 0L243 0C265.092 0 283 17.9087 283 40L283 76C283 79.8662 286.134 83 290 83C293.866 83 297 79.8662 297 76L297 40C297 17.9087 314.908 0 337 0Z"
+                                                  clip-rule="evenodd" fill="#CBB6FF" fill-opacity="1.000000"
+                                                  fill-rule="evenodd"/>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div class="blog-slider-item-left">
+                                    <div class="blog-slider-item-left-header">
+                                        <div class="blog-slider-item-left-header-count">
+                                            01
+                                        </div>
+
+                                        <div class="blog-slider-item-left-header-title">
+                                            Laura Busche
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-slider-item-left-title">
+                                        новая коллекция кресел
+                                    </div>
+
+                                    <div class="blog-slider-item-left-footer">
+                                        14 Января 2023
+                                    </div>
+                                </div>
+
+                                <div class="blog-slider-item-right">
+                                    <img src="static/images/slider-1.png" alt="">
+                                </div>
+
+                                <button class="blog-slider-item-button button-circle">
+                                    3 <span>мин</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide blog-slider-item">
+                            <div class="blog-slider-item-common">
+                                <div class="blog-slider-item-common-bg">
+                                    <svg viewBox="0 0 580 342" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter_2460_1478_dd)">
+                                            <path id="форма"
+                                                  d="M337 0L540 0C562.092 0 580 17.9087 580 40L580 302C580 324.091 562.092 342 540 342L337 342C314.908 342 297 324.091 297 302L297 266C297 262.134 293.866 259 290 259C286.134 259 283 262.134 283 266L283 302C283 318.785 272.662 333.155 258.006 339.09C251.431 341.752 245.062 336.582 242.59 329.934C232.606 303.091 207.965 284 179.5 284C150.891 284 126.858 303.285 117.975 330.342C115.82 336.903 110.089 342 103.184 342L40 342C17.9082 342 0 324.091 0 302L0 40C0 17.9087 17.9082 0 40 0L243 0C265.092 0 283 17.9087 283 40L283 76C283 79.8662 286.134 83 290 83C293.866 83 297 79.8662 297 76L297 40C297 17.9087 314.908 0 337 0Z"
+                                                  clip-rule="evenodd" fill="#CBB6FF" fill-opacity="1.000000"
+                                                  fill-rule="evenodd"/>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div class="blog-slider-item-left">
+                                    <div class="blog-slider-item-left-header">
+                                        <div class="blog-slider-item-left-header-count">
+                                            01
+                                        </div>
+
+                                        <div class="blog-slider-item-left-header-title">
+                                            Laura Busche
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-slider-item-left-title">
+                                        новая коллекция кресел
+                                    </div>
+
+                                    <div class="blog-slider-item-left-footer">
+                                        14 Января 2023
+                                    </div>
+                                </div>
+
+                                <div class="blog-slider-item-right">
+                                    <img src="static/images/slider-2.png" alt="">
+                                </div>
+
+                                <button class="blog-slider-item-button button-circle">
+                                    3 <span>мин</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide blog-slider-item">
+                            <div class="blog-slider-item-common">
+                                <div class="blog-slider-item-common-bg">
+                                    <svg viewBox="0 0 580 342" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter_2460_1478_dd)">
+                                            <path id="форма"
+                                                  d="M337 0L540 0C562.092 0 580 17.9087 580 40L580 302C580 324.091 562.092 342 540 342L337 342C314.908 342 297 324.091 297 302L297 266C297 262.134 293.866 259 290 259C286.134 259 283 262.134 283 266L283 302C283 318.785 272.662 333.155 258.006 339.09C251.431 341.752 245.062 336.582 242.59 329.934C232.606 303.091 207.965 284 179.5 284C150.891 284 126.858 303.285 117.975 330.342C115.82 336.903 110.089 342 103.184 342L40 342C17.9082 342 0 324.091 0 302L0 40C0 17.9087 17.9082 0 40 0L243 0C265.092 0 283 17.9087 283 40L283 76C283 79.8662 286.134 83 290 83C293.866 83 297 79.8662 297 76L297 40C297 17.9087 314.908 0 337 0Z"
+                                                  clip-rule="evenodd" fill="#CBB6FF" fill-opacity="1.000000"
+                                                  fill-rule="evenodd"/>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div class="blog-slider-item-left">
+                                    <div class="blog-slider-item-left-header">
+                                        <div class="blog-slider-item-left-header-count">
+                                            01
+                                        </div>
+
+                                        <div class="blog-slider-item-left-header-title">
+                                            Laura Busche
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-slider-item-left-title">
+                                        новая коллекция кресел
+                                    </div>
+
+                                    <div class="blog-slider-item-left-footer">
+                                        14 Января 2023
+                                    </div>
+                                </div>
+
+                                <div class="blog-slider-item-right">
+                                    <img src="static/images/slider-3.png" alt="">
+                                </div>
+
+                                <button class="blog-slider-item-button button-circle">
+                                    3 <span>мин</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide blog-slider-item">
+                            <div class="blog-slider-item-common">
+                                <div class="blog-slider-item-common-bg">
+                                    <svg viewBox="0 0 580 342" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter_2460_1478_dd)">
+                                            <path id="форма"
+                                                  d="M337 0L540 0C562.092 0 580 17.9087 580 40L580 302C580 324.091 562.092 342 540 342L337 342C314.908 342 297 324.091 297 302L297 266C297 262.134 293.866 259 290 259C286.134 259 283 262.134 283 266L283 302C283 318.785 272.662 333.155 258.006 339.09C251.431 341.752 245.062 336.582 242.59 329.934C232.606 303.091 207.965 284 179.5 284C150.891 284 126.858 303.285 117.975 330.342C115.82 336.903 110.089 342 103.184 342L40 342C17.9082 342 0 324.091 0 302L0 40C0 17.9087 17.9082 0 40 0L243 0C265.092 0 283 17.9087 283 40L283 76C283 79.8662 286.134 83 290 83C293.866 83 297 79.8662 297 76L297 40C297 17.9087 314.908 0 337 0Z"
+                                                  clip-rule="evenodd" fill="#CBB6FF" fill-opacity="1.000000"
+                                                  fill-rule="evenodd"/>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div class="blog-slider-item-left">
+                                    <div class="blog-slider-item-left-header">
+                                        <div class="blog-slider-item-left-header-count">
+                                            01
+                                        </div>
+
+                                        <div class="blog-slider-item-left-header-title">
+                                            Laura Busche
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-slider-item-left-title">
+                                        новая коллекция кресел
+                                    </div>
+
+                                    <div class="blog-slider-item-left-footer">
+                                        14 Января 2023
+                                    </div>
+                                </div>
+
+                                <div class="blog-slider-item-right">
+                                    <img src="static/images/slider-1.png" alt="">
+                                </div>
+
+                                <button class="blog-slider-item-button button-circle">
+                                    3 <span>мин</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide blog-slider-item">
+                            <div class="blog-slider-item-common">
+                                <div class="blog-slider-item-common-bg">
+                                    <svg viewBox="0 0 580 342" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter_2460_1478_dd)">
+                                            <path id="форма"
+                                                  d="M337 0L540 0C562.092 0 580 17.9087 580 40L580 302C580 324.091 562.092 342 540 342L337 342C314.908 342 297 324.091 297 302L297 266C297 262.134 293.866 259 290 259C286.134 259 283 262.134 283 266L283 302C283 318.785 272.662 333.155 258.006 339.09C251.431 341.752 245.062 336.582 242.59 329.934C232.606 303.091 207.965 284 179.5 284C150.891 284 126.858 303.285 117.975 330.342C115.82 336.903 110.089 342 103.184 342L40 342C17.9082 342 0 324.091 0 302L0 40C0 17.9087 17.9082 0 40 0L243 0C265.092 0 283 17.9087 283 40L283 76C283 79.8662 286.134 83 290 83C293.866 83 297 79.8662 297 76L297 40C297 17.9087 314.908 0 337 0Z"
+                                                  clip-rule="evenodd" fill="#CBB6FF" fill-opacity="1.000000"
+                                                  fill-rule="evenodd"/>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div class="blog-slider-item-left">
+                                    <div class="blog-slider-item-left-header">
+                                        <div class="blog-slider-item-left-header-count">
+                                            01
+                                        </div>
+
+                                        <div class="blog-slider-item-left-header-title">
+                                            Laura Busche
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-slider-item-left-title">
+                                        новая коллекция кресел
+                                    </div>
+
+                                    <div class="blog-slider-item-left-footer">
+                                        14 Января 2023
+                                    </div>
+                                </div>
+
+                                <div class="blog-slider-item-right">
+                                    <img src="static/images/slider-2.png" alt="">
+                                </div>
+
+                                <button class="blog-slider-item-button button-circle">
+                                    3 <span>мин</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide blog-slider-item">
+                            <div class="blog-slider-item-common">
+                                <div class="blog-slider-item-common-bg">
+                                    <svg viewBox="0 0 580 342" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter_2460_1478_dd)">
+                                            <path id="форма"
+                                                  d="M337 0L540 0C562.092 0 580 17.9087 580 40L580 302C580 324.091 562.092 342 540 342L337 342C314.908 342 297 324.091 297 302L297 266C297 262.134 293.866 259 290 259C286.134 259 283 262.134 283 266L283 302C283 318.785 272.662 333.155 258.006 339.09C251.431 341.752 245.062 336.582 242.59 329.934C232.606 303.091 207.965 284 179.5 284C150.891 284 126.858 303.285 117.975 330.342C115.82 336.903 110.089 342 103.184 342L40 342C17.9082 342 0 324.091 0 302L0 40C0 17.9087 17.9082 0 40 0L243 0C265.092 0 283 17.9087 283 40L283 76C283 79.8662 286.134 83 290 83C293.866 83 297 79.8662 297 76L297 40C297 17.9087 314.908 0 337 0Z"
+                                                  clip-rule="evenodd" fill="#CBB6FF" fill-opacity="1.000000"
+                                                  fill-rule="evenodd"/>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div class="blog-slider-item-left">
+                                    <div class="blog-slider-item-left-header">
+                                        <div class="blog-slider-item-left-header-count">
+                                            01
+                                        </div>
+
+                                        <div class="blog-slider-item-left-header-title">
+                                            Laura Busche
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-slider-item-left-title">
+                                        новая коллекция кресел
+                                    </div>
+
+                                    <div class="blog-slider-item-left-footer">
+                                        14 Января 2023
+                                    </div>
+                                </div>
+
+                                <div class="blog-slider-item-right">
+                                    <img src="static/images/slider-3.png" alt="">
+                                </div>
+
+                                <button class="blog-slider-item-button button-circle">
+                                    3 <span>мин</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-year">
+            @2023
+        </div>
+
+        <div class="footer-protected">
+            Все права защищены
+        </div>
+    </div>
+</footer>
+
+<div class="card-modal modal" id="card-modal-1">
+    <div class="container">
+        <div class="card-modal-item">
+            <div class="close">
+                закрыть
+                <span class="close">
+                    <svg viewBox="0 0 20 20" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <rect id="x" rx="0.000000" width="19.000000" height="19.000000"
+                              transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+                        <g clip-path="url(#clip2504_1256)">
+                            <path id="Vector" d="M19 1L1 19" stroke="#FFFFFF" stroke-opacity="1.000000"
+                                  stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                            <path id="Vector" d="M1 1L19 19" stroke="#FFFFFF" stroke-opacity="1.000000"
+                                  stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                        </g>
+                    </svg>
+                </span>
+            </div>
+
+            <div class="card-modal-item-image">
+                <img src="static/images/good-day-1.png" alt="">
+            </div>
+
+            <div class="card-modal-stroke-one">
+                <div class="card-modal-stroke-one-art">
+                    Арт. GNM007
+                </div>
+
+                <button class="card-modal-stroke-one-button favorite-button button-circle">
+                    <svg viewBox="0 0 26 23" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector"
+                              d="M21.1 1.48C20.33 1.16 19.51 1 18.68 1C17.85 1 17.03 1.16 16.26 1.48C15.49 1.8 14.8 2.26 14.21 2.85L13 4.07L11.78 2.85C10.59 1.66 8.99 1 7.31 1C5.64 1 4.03 1.66 2.84 2.85C1.66 4.04 1 5.65 1 7.33C1 9.01 1.66 10.62 2.84 11.81L4.06 13.03L13 22L21.93 13.03L23.14 11.81C23.73 11.22 24.2 10.53 24.51 9.76C24.83 8.99 25 8.16 25 7.33C25 6.5 24.83 5.68 24.51 4.91C24.2 4.14 23.73 3.44 23.14 2.85C22.56 2.26 21.86 1.8 21.1 1.48Z"
+                              stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="card-modal-stroke-two">
+                <div class="card-modal-stroke-two-color">
+                    Цвет: <span class="color-circle"></span><span>Лаванда</span>
+                </div>
+
+                <div class="card-modal-stroke-two-height">
+                    высота:<span>60</span>см
+                </div>
+            </div>
+
+            <div class="card-modal-stroke-three">
+                Benjamin Moore
+            </div>
+
+            <div class="card-modal-stroke-four">
+                <div class="card-modal-stroke-four-text">
+                    Функциональная дизайнерская лампа для создания максимально комфортного освещения
+                </div>
+
+                <div class="card-modal-stroke-four-group">
+                    <div class="card-modal-stroke-four-title">
+                        Santa Trinita
+                    </div>
+
+                    <div class="card-modal-stroke-four-price">
+                        150 000<span class="price-span">₽</span>
+                    </div>
+                </div>
+
+                <button class="goods-day-item-buy button-buy">
+                    <span>
+                        <svg viewBox="0 0 20.3086 21.25" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path id="Union"
+                                              d="M3.58984 2.68994L3.38965 5.14014C3.34961 5.60986 3.71973 6 4.19043 6L19.5 6C19.9199 6 20.2695 5.68018 20.2998 5.25977C20.4297 3.49023 19.0801 2.0498 17.3096 2.0498L5.01953 2.0498C4.91992 1.60986 4.71973 1.18994 4.41016 0.839844C3.91016 0.310059 3.20996 0 2.49023 0L0.75 0C0.339844 0 0 0.339844 0 0.75C0 1.16016 0.339844 1.5 0.75 1.5L2.49023 1.5C2.7998 1.5 3.08984 1.62988 3.2998 1.8501C3.50977 2.08008 3.61035 2.37988 3.58984 2.68994ZM3.91992 7.5L19.2598 7.5C19.7305 7.5 20.0898 7.89014 20.0498 8.3501L19.7197 13.02C19.6104 14.52 18.29 15.75 16.79 15.75L5.66992 15.75C3.95996 15.75 2.62012 14.29 2.75977 12.5801L3.12012 8.22998C3.16016 7.81982 3.5 7.5 3.91992 7.5ZM7 21.25C7.9668 21.25 8.75 20.4663 8.75 19.5C8.75 18.5337 7.9668 17.75 7 17.75C6.0332 17.75 5.25 18.5337 5.25 19.5C5.25 20.4663 6.0332 21.25 7 21.25ZM15 21.25C15.9668 21.25 16.75 20.4663 16.75 19.5C16.75 18.5337 15.9668 17.75 15 17.75C14.0332 17.75 13.25 18.5337 13.25 19.5C13.25 20.4663 14.0332 21.25 15 21.25Z"
+                                              clip-rule="evenodd" fill="#D9FF5A" fill-opacity="1.000000"
+                                              fill-rule="evenodd"/>
+                                    </svg>
+                    </span>
+
+                    Купить
+                </button>
+
+                <button class="card-modal-stroke-four-button button-buy">
+                    <span>
+                        <svg viewBox="0 0 20.3086 21.25" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path id="Union"
+                                  d="M3.58984 2.68994L3.38965 5.14014C3.34961 5.60986 3.71973 6 4.19043 6L19.5 6C19.9199 6 20.2695 5.68018 20.2998 5.25977C20.4297 3.49023 19.0801 2.0498 17.3096 2.0498L5.01953 2.0498C4.91992 1.60986 4.71973 1.18994 4.41016 0.839844C3.91016 0.310059 3.20996 0 2.49023 0L0.75 0C0.339844 0 0 0.339844 0 0.75C0 1.16016 0.339844 1.5 0.75 1.5L2.49023 1.5C2.7998 1.5 3.08984 1.62988 3.2998 1.8501C3.50977 2.08008 3.61035 2.37988 3.58984 2.68994ZM3.91992 7.5L19.2598 7.5C19.7305 7.5 20.0898 7.89014 20.0498 8.3501L19.7197 13.02C19.6104 14.52 18.29 15.75 16.79 15.75L5.66992 15.75C3.95996 15.75 2.62012 14.29 2.75977 12.5801L3.12012 8.22998C3.16016 7.81982 3.5 7.5 3.91992 7.5ZM7 21.25C7.9668 21.25 8.75 20.4663 8.75 19.5C8.75 18.5337 7.9668 17.75 7 17.75C6.0332 17.75 5.25 18.5337 5.25 19.5C5.25 20.4663 6.0332 21.25 7 21.25ZM15 21.25C15.9668 21.25 16.75 20.4663 16.75 19.5C16.75 18.5337 15.9668 17.75 15 17.75C14.0332 17.75 13.25 18.5337 13.25 19.5C13.25 20.4663 14.0332 21.25 15 21.25Z"
+                                  clip-rule="evenodd" fill="#D9FF5A" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+                    Купить
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card-modal modal" id="card-modal-2">
+    <div class="container">
+        <div class="card-modal-item">
+            <div class="close">
+                закрыть
+                <span class="close">
+                    <svg viewBox="0 0 20 20" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <rect id="x" rx="0.000000" width="19.000000" height="19.000000"
+                              transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+                        <g clip-path="url(#clip2504_1256)">
+                            <path id="Vector" d="M19 1L1 19" stroke="#FFFFFF" stroke-opacity="1.000000"
+                                  stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                            <path id="Vector" d="M1 1L19 19" stroke="#FFFFFF" stroke-opacity="1.000000"
+                                  stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                        </g>
+                    </svg>
+                </span>
+            </div>
+
+            <div class="card-modal-item-image">
+                <img src="static/images/good-day-2.png" alt="">
+            </div>
+
+            <div class="card-modal-stroke-one">
+                <div class="card-modal-stroke-one-art">
+                    Арт. GNM007
+                </div>
+
+                <button class="card-modal-stroke-one-button favorite-button button-circle">
+                    <svg viewBox="0 0 26 23" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector"
+                              d="M21.1 1.48C20.33 1.16 19.51 1 18.68 1C17.85 1 17.03 1.16 16.26 1.48C15.49 1.8 14.8 2.26 14.21 2.85L13 4.07L11.78 2.85C10.59 1.66 8.99 1 7.31 1C5.64 1 4.03 1.66 2.84 2.85C1.66 4.04 1 5.65 1 7.33C1 9.01 1.66 10.62 2.84 11.81L4.06 13.03L13 22L21.93 13.03L23.14 11.81C23.73 11.22 24.2 10.53 24.51 9.76C24.83 8.99 25 8.16 25 7.33C25 6.5 24.83 5.68 24.51 4.91C24.2 4.14 23.73 3.44 23.14 2.85C22.56 2.26 21.86 1.8 21.1 1.48Z"
+                              stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="card-modal-stroke-two">
+                <div class="card-modal-stroke-two-color">
+                    Цвет: <span>Лаванда</span>
+                </div>
+
+                <div class="card-modal-stroke-two-height">
+                    высота:<span>60</span>см
+                </div>
+            </div>
+
+            <div class="card-modal-stroke-three">
+                Paint Here Glory
+            </div>
+
+            <div class="card-modal-stroke-four">
+                <div class="card-modal-stroke-four-text">
+                    Функциональная дизайнерское кресло для создания максимально уюта в помещении
+                </div>
+
+                <div class="card-modal-stroke-four-group">
+                    <div class="card-modal-stroke-four-title">
+                        Кресло
+                    </div>
+
+                    <div class="card-modal-stroke-four-price">
+                        120 000<span class="price-span">₽</span>
+                    </div>
+                </div>
+
+                <button class="goods-day-item-buy button-buy">
+                    <span>
+                        <svg viewBox="0 0 20.3086 21.25" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                            <path id="Union"
+                                  d="M3.58984 2.68994L3.38965 5.14014C3.34961 5.60986 3.71973 6 4.19043 6L19.5 6C19.9199 6 20.2695 5.68018 20.2998 5.25977C20.4297 3.49023 19.0801 2.0498 17.3096 2.0498L5.01953 2.0498C4.91992 1.60986 4.71973 1.18994 4.41016 0.839844C3.91016 0.310059 3.20996 0 2.49023 0L0.75 0C0.339844 0 0 0.339844 0 0.75C0 1.16016 0.339844 1.5 0.75 1.5L2.49023 1.5C2.7998 1.5 3.08984 1.62988 3.2998 1.8501C3.50977 2.08008 3.61035 2.37988 3.58984 2.68994ZM3.91992 7.5L19.2598 7.5C19.7305 7.5 20.0898 7.89014 20.0498 8.3501L19.7197 13.02C19.6104 14.52 18.29 15.75 16.79 15.75L5.66992 15.75C3.95996 15.75 2.62012 14.29 2.75977 12.5801L3.12012 8.22998C3.16016 7.81982 3.5 7.5 3.91992 7.5ZM7 21.25C7.9668 21.25 8.75 20.4663 8.75 19.5C8.75 18.5337 7.9668 17.75 7 17.75C6.0332 17.75 5.25 18.5337 5.25 19.5C5.25 20.4663 6.0332 21.25 7 21.25ZM15 21.25C15.9668 21.25 16.75 20.4663 16.75 19.5C16.75 18.5337 15.9668 17.75 15 17.75C14.0332 17.75 13.25 18.5337 13.25 19.5C13.25 20.4663 14.0332 21.25 15 21.25Z"
+                                  clip-rule="evenodd" fill="#D9FF5A" fill-opacity="1.000000"
+                                  fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+
+                    Купить
+                </button>
+
+                <button class="card-modal-stroke-four-button button-buy">
+                    <span>
+                        <svg viewBox="0 0 20.3086 21.25" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path id="Union"
+                                  d="M3.58984 2.68994L3.38965 5.14014C3.34961 5.60986 3.71973 6 4.19043 6L19.5 6C19.9199 6 20.2695 5.68018 20.2998 5.25977C20.4297 3.49023 19.0801 2.0498 17.3096 2.0498L5.01953 2.0498C4.91992 1.60986 4.71973 1.18994 4.41016 0.839844C3.91016 0.310059 3.20996 0 2.49023 0L0.75 0C0.339844 0 0 0.339844 0 0.75C0 1.16016 0.339844 1.5 0.75 1.5L2.49023 1.5C2.7998 1.5 3.08984 1.62988 3.2998 1.8501C3.50977 2.08008 3.61035 2.37988 3.58984 2.68994ZM3.91992 7.5L19.2598 7.5C19.7305 7.5 20.0898 7.89014 20.0498 8.3501L19.7197 13.02C19.6104 14.52 18.29 15.75 16.79 15.75L5.66992 15.75C3.95996 15.75 2.62012 14.29 2.75977 12.5801L3.12012 8.22998C3.16016 7.81982 3.5 7.5 3.91992 7.5ZM7 21.25C7.9668 21.25 8.75 20.4663 8.75 19.5C8.75 18.5337 7.9668 17.75 7 17.75C6.0332 17.75 5.25 18.5337 5.25 19.5C5.25 20.4663 6.0332 21.25 7 21.25ZM15 21.25C15.9668 21.25 16.75 20.4663 16.75 19.5C16.75 18.5337 15.9668 17.75 15 17.75C14.0332 17.75 13.25 18.5337 13.25 19.5C13.25 20.4663 14.0332 21.25 15 21.25Z"
+                                  clip-rule="evenodd" fill="#D9FF5A" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+                    Купить
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card-modal modal" id="card-modal-3">
+    <div class="container">
+        <div class="card-modal-item">
+            <div class="close">
+                закрыть
+                <span class="close">
+                    <svg viewBox="0 0 20 20" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <rect id="x" rx="0.000000" width="19.000000" height="19.000000"
+                              transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+                        <g clip-path="url(#clip2504_1256)">
+                            <path id="Vector" d="M19 1L1 19" stroke="#FFFFFF" stroke-opacity="1.000000"
+                                  stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                            <path id="Vector" d="M1 1L19 19" stroke="#FFFFFF" stroke-opacity="1.000000"
+                                  stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                        </g>
+                    </svg>
+                </span>
+            </div>
+
+            <div class="card-modal-item-image">
+                <img src="static/images/good-day-3.png" alt="">
+            </div>
+
+            <div class="card-modal-stroke-one">
+                <div class="card-modal-stroke-one-art">
+                    Арт. GNM007
+                </div>
+
+                <button class="card-modal-stroke-one-button favorite-button button-circle">
+                    <svg viewBox="0 0 26 23" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector"
+                              d="M21.1 1.48C20.33 1.16 19.51 1 18.68 1C17.85 1 17.03 1.16 16.26 1.48C15.49 1.8 14.8 2.26 14.21 2.85L13 4.07L11.78 2.85C10.59 1.66 8.99 1 7.31 1C5.64 1 4.03 1.66 2.84 2.85C1.66 4.04 1 5.65 1 7.33C1 9.01 1.66 10.62 2.84 11.81L4.06 13.03L13 22L21.93 13.03L23.14 11.81C23.73 11.22 24.2 10.53 24.51 9.76C24.83 8.99 25 8.16 25 7.33C25 6.5 24.83 5.68 24.51 4.91C24.2 4.14 23.73 3.44 23.14 2.85C22.56 2.26 21.86 1.8 21.1 1.48Z"
+                              stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="card-modal-stroke-two">
+                <div class="card-modal-stroke-two-color">
+                    Цвет: <span>Лаванда</span>
+                </div>
+
+                <div class="card-modal-stroke-two-height">
+                    высота:<span>60</span>см
+                </div>
+            </div>
+
+            <div class="card-modal-stroke-three">
+                Benjamin Moore
+            </div>
+
+            <div class="card-modal-stroke-four">
+                <div class="card-modal-stroke-four-text">
+                    Функциональная дизайнерская лампа для создания максимально комфортного освещения
+                </div>
+
+                <div class="card-modal-stroke-four-group">
+                    <div class="card-modal-stroke-four-title">
+                        высокий стол
+                    </div>
+
+                    <div class="card-modal-stroke-four-price">
+                        235 000<span class="price-span">₽</span>
+                    </div>
+                </div>
+
+                <button class="goods-day-item-buy button-buy">
+                    <span>
+                                    <svg viewBox="0 0 20.3086 21.25" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path id="Union"
+                                              d="M3.58984 2.68994L3.38965 5.14014C3.34961 5.60986 3.71973 6 4.19043 6L19.5 6C19.9199 6 20.2695 5.68018 20.2998 5.25977C20.4297 3.49023 19.0801 2.0498 17.3096 2.0498L5.01953 2.0498C4.91992 1.60986 4.71973 1.18994 4.41016 0.839844C3.91016 0.310059 3.20996 0 2.49023 0L0.75 0C0.339844 0 0 0.339844 0 0.75C0 1.16016 0.339844 1.5 0.75 1.5L2.49023 1.5C2.7998 1.5 3.08984 1.62988 3.2998 1.8501C3.50977 2.08008 3.61035 2.37988 3.58984 2.68994ZM3.91992 7.5L19.2598 7.5C19.7305 7.5 20.0898 7.89014 20.0498 8.3501L19.7197 13.02C19.6104 14.52 18.29 15.75 16.79 15.75L5.66992 15.75C3.95996 15.75 2.62012 14.29 2.75977 12.5801L3.12012 8.22998C3.16016 7.81982 3.5 7.5 3.91992 7.5ZM7 21.25C7.9668 21.25 8.75 20.4663 8.75 19.5C8.75 18.5337 7.9668 17.75 7 17.75C6.0332 17.75 5.25 18.5337 5.25 19.5C5.25 20.4663 6.0332 21.25 7 21.25ZM15 21.25C15.9668 21.25 16.75 20.4663 16.75 19.5C16.75 18.5337 15.9668 17.75 15 17.75C14.0332 17.75 13.25 18.5337 13.25 19.5C13.25 20.4663 14.0332 21.25 15 21.25Z"
+                                              clip-rule="evenodd" fill="#D9FF5A" fill-opacity="1.000000"
+                                              fill-rule="evenodd"/>
+                                    </svg>
+                                </span>
+
+                    Купить
+                </button>
+
+                <button class="card-modal-stroke-four-button button-buy">
+                    <span>
+                        <svg viewBox="0 0 20.3086 21.25" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path id="Union"
+                                  d="M3.58984 2.68994L3.38965 5.14014C3.34961 5.60986 3.71973 6 4.19043 6L19.5 6C19.9199 6 20.2695 5.68018 20.2998 5.25977C20.4297 3.49023 19.0801 2.0498 17.3096 2.0498L5.01953 2.0498C4.91992 1.60986 4.71973 1.18994 4.41016 0.839844C3.91016 0.310059 3.20996 0 2.49023 0L0.75 0C0.339844 0 0 0.339844 0 0.75C0 1.16016 0.339844 1.5 0.75 1.5L2.49023 1.5C2.7998 1.5 3.08984 1.62988 3.2998 1.8501C3.50977 2.08008 3.61035 2.37988 3.58984 2.68994ZM3.91992 7.5L19.2598 7.5C19.7305 7.5 20.0898 7.89014 20.0498 8.3501L19.7197 13.02C19.6104 14.52 18.29 15.75 16.79 15.75L5.66992 15.75C3.95996 15.75 2.62012 14.29 2.75977 12.5801L3.12012 8.22998C3.16016 7.81982 3.5 7.5 3.91992 7.5ZM7 21.25C7.9668 21.25 8.75 20.4663 8.75 19.5C8.75 18.5337 7.9668 17.75 7 17.75C6.0332 17.75 5.25 18.5337 5.25 19.5C5.25 20.4663 6.0332 21.25 7 21.25ZM15 21.25C15.9668 21.25 16.75 20.4663 16.75 19.5C16.75 18.5337 15.9668 17.75 15 17.75C14.0332 17.75 13.25 18.5337 13.25 19.5C13.25 20.4663 14.0332 21.25 15 21.25Z"
+                                  clip-rule="evenodd" fill="#D9FF5A" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+                    Купить
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
